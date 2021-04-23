@@ -1,0 +1,63 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ScreenShotBot.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="OptionScreenShotDir" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="OptionScreenIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+    <Setting Name="OptionScreenShotInterval" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+    <Setting Name="OptionScreenShotIntervalUnits" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+    <Setting Name="OptionResetStatusAfterStart" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="OptionScreenShotSubDir" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{yy}-{MM}-{dd}</Value>
+    </Setting>
+    <Setting Name="OptionScreenShotFilename" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Screenshot_{0000000}.png</Value>
+    </Setting>
+    <Setting Name="OptionScreenShotExtension" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="OptionLogLevel" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="OptionVideoConverterPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="OptionVideoFilePattern" Type="System.String" Scope="User">
+      <Value Profile="(Default)">*.png</Value>
+    </Setting>
+    <Setting Name="OptionVideoImagesPerSecond" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="OptionVideoScaleType" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="OptionVideoScale" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">720</Value>
+    </Setting>
+    <Setting Name="OptionVideoOutputDir" Type="System.String" Scope="User">
+      <Value Profile="(Default)">..</Value>
+    </Setting>
+    <Setting Name="OptionVideoConverterCustomCommand" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="OptionUseVideoConverterCustomCommand" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="OptionVideoSubDirsType" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="OptionVideoOutputFilename" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Timelapse-{yy}-{MM}-{dd}.mp4</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

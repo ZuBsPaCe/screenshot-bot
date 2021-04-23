@@ -1,0 +1,189 @@
+﻿###############################################################################
+# Wir wollen nicht, das git automatisch LF Line-Endings nach CRLF umwandelt.
+# Dies führt nur zu Problemen. Beispielsweise werden dann manchmal verschobene
+# Dateien nicht als "rename" erkannt. Default ist auto.
+###############################################################################
+* text=false
+###############################################################################
+# Set default behavior for command prompt diff.
+#
+# This is need for earlier builds of msysgit that does not have it on by
+# default for csharp files.
+# Note: This is only used by command line
+###############################################################################
+#*.cs     diff=csharp
+###############################################################################
+# Set the merge driver for project and solution files
+#
+# Merging from the command prompt will add diff markers to the files if there
+# are conflicts (Merging from VS is not affected by the settings below, in VS
+# the diff markers are never inserted). Diff markers may cause the following 
+# file extensions to fail to load in VS. An alternative would be to treat
+# these files as binary and thus will always conflict and require user
+# intervention with every merge. To do so, just uncomment the entries below
+###############################################################################
+#*.sln       merge=binary
+#*.csproj    merge=binary
+#*.vbproj    merge=binary
+#*.vcxproj   merge=binary
+#*.vcproj    merge=binary
+#*.dbproj    merge=binary
+#*.fsproj    merge=binary
+#*.lsproj    merge=binary
+#*.wixproj   merge=binary
+#*.modelproj merge=binary
+#*.sqlproj   merge=binary
+#*.wwaproj   merge=binary
+###############################################################################
+# behavior for image files
+#
+# image files are treated as binary by default.
+###############################################################################
+#*.jpg   binary
+#*.png   binary
+#*.gif   binary
+###############################################################################
+# diff behavior for common document formats
+# 
+# Convert binary document formats to text before diffing them. This feature
+# is only available from the command line. Turn it on by uncommenting the 
+# entries below.
+###############################################################################
+#*.doc   diff=astextplain
+#*.DOC   diff=astextplain
+#*.docx  diff=astextplain
+#*.DOCX  diff=astextplain
+#*.dot   diff=astextplain
+#*.DOT   diff=astextplain
+#*.pdf   diff=astextplain
+#*.PDF   diff=astextplain
+#*.rtf   diff=astextplain
+#*.RTF   diff=astextplain
+
+# Images
+*.ai filter=lfs diff=lfs merge=lfs -text
+*.ase filter=lfs diff=lfs merge=lfs -text
+*.bmp filter=lfs diff=lfs merge=lfs -text
+*.gif filter=lfs diff=lfs merge=lfs -text
+*.ico filter=lfs diff=lfs merge=lfs -text
+*.jp2 filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.tif filter=lfs diff=lfs merge=lfs -text
+*.tiff filter=lfs diff=lfs merge=lfs -text
+*.xcf filter=lfs diff=lfs merge=lfs -text
+
+# Documents
+*.chm filter=lfs diff=lfs merge=lfs -text
+*.doc filter=lfs diff=lfs merge=lfs -text
+*.docx filter=lfs diff=lfs merge=lfs -text
+*.dot filter=lfs diff=lfs merge=lfs -text
+*.dotx filter=lfs diff=lfs merge=lfs -text
+*.pbix filter=lfs diff=lfs merge=lfs -text
+*.pdf filter=lfs diff=lfs merge=lfs -text
+*.ppt filter=lfs diff=lfs merge=lfs -text
+*.pptm filter=lfs diff=lfs merge=lfs -text
+*.pptx filter=lfs diff=lfs merge=lfs -text
+*.rtf filter=lfs diff=lfs merge=lfs -text
+*.svg filter=lfs diff=lfs merge=lfs -text
+*.vsd filter=lfs diff=lfs merge=lfs -text
+*.xls filter=lfs diff=lfs merge=lfs -text
+*.xlsx filter=lfs diff=lfs merge=lfs -text
+*.xps filter=lfs diff=lfs merge=lfs -text
+
+# Audio
+*.mp3 filter=lfs diff=lfs merge=lfs -text
+*.ogg filter=lfs diff=lfs merge=lfs -text
+*.wav filter=lfs diff=lfs merge=lfs -text
+
+# Video
+*.avi filter=lfs diff=lfs merge=lfs -text
+*.mov filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.wmv filter=lfs diff=lfs merge=lfs -text
+
+# Binaries
+*.dll filter=lfs diff=lfs merge=lfs -text
+*.exe filter=lfs diff=lfs merge=lfs -text
+*.ldf filter=lfs diff=lfs merge=lfs -text
+*.mdf filter=lfs diff=lfs merge=lfs -text
+*.msi filter=lfs diff=lfs merge=lfs -text
+*.nupgk filter=lfs diff=lfs merge=lfs -text
+*.pdb filter=lfs diff=lfs merge=lfs -text
+
+# Archives
+*.7z filter=lfs diff=lfs merge=lfs -text
+*.gz filter=lfs diff=lfs merge=lfs -text
+*.tar filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+
+# Fonts
+*.eot filter=lfs diff=lfs merge=lfs -text
+*.ttf filter=lfs diff=lfs merge=lfs -text
+*.woff filter=lfs diff=lfs merge=lfs -text
+*.woff2 filter=lfs diff=lfs merge=lfs -text
+
+# Others
+*.aff filter=lfs diff=lfs merge=lfs -text
+*.asmx filter=lfs diff=lfs merge=lfs -text
+*.aspx filter=lfs diff=lfs merge=lfs -text
+*.bak filter=lfs diff=lfs merge=lfs -text
+*.bamlmap filter=lfs diff=lfs merge=lfs -text
+*.cache filter=lfs diff=lfs merge=lfs -text
+*.cdf filter=lfs diff=lfs merge=lfs -text
+*.cer filter=lfs diff=lfs merge=lfs -text
+*.crt filter=lfs diff=lfs merge=lfs -text
+*.csr filter=lfs diff=lfs merge=lfs -text
+*.dat filter=lfs diff=lfs merge=lfs -text
+*.db filter=lfs diff=lfs merge=lfs -text
+*.ddl filter=lfs diff=lfs merge=lfs -text
+*.dtbcad filter=lfs diff=lfs merge=lfs -text
+*.dtp filter=lfs diff=lfs merge=lfs -text
+*.emf filter=lfs diff=lfs merge=lfs -text
+*.emz filter=lfs diff=lfs merge=lfs -text
+*.exp filter=lfs diff=lfs merge=lfs -text
+*.fdf filter=lfs diff=lfs merge=lfs -text
+*.frx filter=lfs diff=lfs merge=lfs -text
+*.fsp filter=lfs diff=lfs merge=lfs -text
+*.gpg filter=lfs diff=lfs merge=lfs -text
+*.graphml filter=lfs diff=lfs merge=lfs -text
+*.hdf filter=lfs diff=lfs merge=lfs -text
+*.icc filter=lfs diff=lfs merge=lfs -text
+*.isl filter=lfs diff=lfs merge=lfs -text
+*.key filter=lfs diff=lfs merge=lfs -text
+*.lib filter=lfs diff=lfs merge=lfs -text
+*.mdb filter=lfs diff=lfs merge=lfs -text
+*.mht filter=lfs diff=lfs merge=lfs -text
+*.msg filter=lfs diff=lfs merge=lfs -text
+*.mso filter=lfs diff=lfs merge=lfs -text
+*.ocx filter=lfs diff=lfs merge=lfs -text
+*.odt filter=lfs diff=lfs merge=lfs -text
+*.opd filter=lfs diff=lfs merge=lfs -text
+*.partial filter=lfs diff=lfs merge=lfs -text
+*.pdn filter=lfs diff=lfs merge=lfs -text
+*.pfx filter=lfs diff=lfs merge=lfs -text
+*.ppk filter=lfs diff=lfs merge=lfs -text
+*.ps filter=lfs diff=lfs merge=lfs -text
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.psd1 filter=lfs diff=lfs merge=lfs -text
+*.psp filter=lfs diff=lfs merge=lfs -text
+*.pub filter=lfs diff=lfs merge=lfs -text
+*.pvk filter=lfs diff=lfs merge=lfs -text
+*.rdp filter=lfs diff=lfs merge=lfs -text
+*.res filter=lfs diff=lfs merge=lfs -text
+*.sbx filter=lfs diff=lfs merge=lfs -text
+*.slp filter=lfs diff=lfs merge=lfs -text
+*.snk filter=lfs diff=lfs merge=lfs -text
+*.svclog filter=lfs diff=lfs merge=lfs -text
+*.thmx filter=lfs diff=lfs merge=lfs -text
+*.tmp filter=lfs diff=lfs merge=lfs -text
+*.traineddata filter=lfs diff=lfs merge=lfs -text
+*.u3d filter=lfs diff=lfs merge=lfs -text
+*.vsmdi filter=lfs diff=lfs merge=lfs -text
+*.vspscc filter=lfs diff=lfs merge=lfs -text
+*.xfdf filter=lfs diff=lfs merge=lfs -text
+*.xlsm filter=lfs diff=lfs merge=lfs -text
+*.xod filter=lfs diff=lfs merge=lfs -text
+*.xpi filter=lfs diff=lfs merge=lfs -text

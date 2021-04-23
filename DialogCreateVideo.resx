@@ -1,0 +1,1205 @@
+﻿<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="gbOptions.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="btnOutputFilenameAddVariable.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnOutputFilenameAddVariable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing.Primitives" name="System.Drawing.Primitives, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnOutputFilenameAddVariable.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>427, 198</value>
+  </data>
+  <data name="btnOutputFilenameAddVariable.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>128, 25</value>
+  </data>
+  <assembly alias="System.Private.CoreLib" name="System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
+  <data name="btnOutputFilenameAddVariable.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>24</value>
+  </data>
+  <data name="btnOutputFilenameAddVariable.Text" xml:space="preserve">
+    <value>Add variable</value>
+  </data>
+  <data name="&gt;&gt;btnOutputFilenameAddVariable.Name" xml:space="preserve">
+    <value>btnOutputFilenameAddVariable</value>
+  </data>
+  <data name="&gt;&gt;btnOutputFilenameAddVariable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOutputFilenameAddVariable.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;btnOutputFilenameAddVariable.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtVideoOutputFilename.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtVideoOutputFilename.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>139, 199</value>
+  </data>
+  <data name="txtVideoOutputFilename.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>283, 23</value>
+  </data>
+  <data name="txtVideoOutputFilename.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;txtVideoOutputFilename.Name" xml:space="preserve">
+    <value>txtVideoOutputFilename</value>
+  </data>
+  <data name="&gt;&gt;txtVideoOutputFilename.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtVideoOutputFilename.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;txtVideoOutputFilename.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblVideoOutputFilename.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="lblVideoOutputFilename.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblVideoOutputFilename.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 203</value>
+  </data>
+  <data name="lblVideoOutputFilename.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>94, 15</value>
+  </data>
+  <data name="lblVideoOutputFilename.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>22</value>
+  </data>
+  <data name="lblVideoOutputFilename.Text" xml:space="preserve">
+    <value>Output filename</value>
+  </data>
+  <data name="&gt;&gt;lblVideoOutputFilename.Name" xml:space="preserve">
+    <value>lblVideoOutputFilename</value>
+  </data>
+  <data name="&gt;&gt;lblVideoOutputFilename.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblVideoOutputFilename.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;lblVideoOutputFilename.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cbVideoSubDirsType.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="cbVideoSubDirsType.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>428, 51</value>
+  </data>
+  <data name="cbVideoSubDirsType.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>126, 23</value>
+  </data>
+  <data name="cbVideoSubDirsType.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;cbVideoSubDirsType.Name" xml:space="preserve">
+    <value>cbVideoSubDirsType</value>
+  </data>
+  <data name="&gt;&gt;cbVideoSubDirsType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbVideoSubDirsType.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;cbVideoSubDirsType.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnOpenVideoOutputDir.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnOpenVideoOutputDir.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnOpenVideoOutputDir.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>495, 169</value>
+  </data>
+  <data name="btnOpenVideoOutputDir.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>60, 25</value>
+  </data>
+  <data name="btnOpenVideoOutputDir.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>20</value>
+  </data>
+  <data name="btnOpenVideoOutputDir.Text" xml:space="preserve">
+    <value>Open...</value>
+  </data>
+  <data name="&gt;&gt;btnOpenVideoOutputDir.Name" xml:space="preserve">
+    <value>btnOpenVideoOutputDir</value>
+  </data>
+  <data name="&gt;&gt;btnOpenVideoOutputDir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOpenVideoOutputDir.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;btnOpenVideoOutputDir.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnOpenVideoInputDir.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnOpenVideoInputDir.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnOpenVideoInputDir.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>495, 140</value>
+  </data>
+  <data name="btnOpenVideoInputDir.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>60, 25</value>
+  </data>
+  <data name="btnOpenVideoInputDir.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>19</value>
+  </data>
+  <data name="btnOpenVideoInputDir.Text" xml:space="preserve">
+    <value>Open...</value>
+  </data>
+  <data name="&gt;&gt;btnOpenVideoInputDir.Name" xml:space="preserve">
+    <value>btnOpenVideoInputDir</value>
+  </data>
+  <data name="&gt;&gt;btnOpenVideoInputDir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOpenVideoInputDir.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;btnOpenVideoInputDir.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnSelectVideoOutputDir.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnSelectVideoOutputDir.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>427, 169</value>
+  </data>
+  <data name="btnSelectVideoOutputDir.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>60, 25</value>
+  </data>
+  <data name="btnSelectVideoOutputDir.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>18</value>
+  </data>
+  <data name="btnSelectVideoOutputDir.Text" xml:space="preserve">
+    <value>Select...</value>
+  </data>
+  <data name="&gt;&gt;btnSelectVideoOutputDir.Name" xml:space="preserve">
+    <value>btnSelectVideoOutputDir</value>
+  </data>
+  <data name="&gt;&gt;btnSelectVideoOutputDir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSelectVideoOutputDir.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;btnSelectVideoOutputDir.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtVideoOutputDir.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtVideoOutputDir.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>139, 170</value>
+  </data>
+  <data name="txtVideoOutputDir.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>283, 23</value>
+  </data>
+  <data name="txtVideoOutputDir.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;txtVideoOutputDir.Name" xml:space="preserve">
+    <value>txtVideoOutputDir</value>
+  </data>
+  <data name="&gt;&gt;txtVideoOutputDir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtVideoOutputDir.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;txtVideoOutputDir.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblVideoOutputDir.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="lblVideoOutputDir.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 173</value>
+  </data>
+  <data name="lblVideoOutputDir.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>95, 15</value>
+  </data>
+  <data name="lblVideoOutputDir.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>16</value>
+  </data>
+  <data name="lblVideoOutputDir.Text" xml:space="preserve">
+    <value>Output directory</value>
+  </data>
+  <data name="&gt;&gt;lblVideoOutputDir.Name" xml:space="preserve">
+    <value>lblVideoOutputDir</value>
+  </data>
+  <data name="&gt;&gt;lblVideoOutputDir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblVideoOutputDir.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;lblVideoOutputDir.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="btnSelectVideoInputDir.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnSelectVideoInputDir.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>427, 139</value>
+  </data>
+  <data name="btnSelectVideoInputDir.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>60, 25</value>
+  </data>
+  <data name="btnSelectVideoInputDir.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>15</value>
+  </data>
+  <data name="btnSelectVideoInputDir.Text" xml:space="preserve">
+    <value>Select...</value>
+  </data>
+  <data name="&gt;&gt;btnSelectVideoInputDir.Name" xml:space="preserve">
+    <value>btnSelectVideoInputDir</value>
+  </data>
+  <data name="&gt;&gt;btnSelectVideoInputDir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSelectVideoInputDir.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;btnSelectVideoInputDir.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="txtVideoInputDir.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtVideoInputDir.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>139, 140</value>
+  </data>
+  <data name="txtVideoInputDir.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>283, 23</value>
+  </data>
+  <data name="txtVideoInputDir.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;txtVideoInputDir.Name" xml:space="preserve">
+    <value>txtVideoInputDir</value>
+  </data>
+  <data name="&gt;&gt;txtVideoInputDir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtVideoInputDir.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;txtVideoInputDir.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lblVideoInputDir.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="lblVideoInputDir.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 143</value>
+  </data>
+  <data name="lblVideoInputDir.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>85, 15</value>
+  </data>
+  <data name="lblVideoInputDir.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>13</value>
+  </data>
+  <data name="lblVideoInputDir.Text" xml:space="preserve">
+    <value>Input directory</value>
+  </data>
+  <data name="&gt;&gt;lblVideoInputDir.Name" xml:space="preserve">
+    <value>lblVideoInputDir</value>
+  </data>
+  <data name="&gt;&gt;lblVideoInputDir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblVideoInputDir.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;lblVideoInputDir.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="cbVideoScaleType.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="cbVideoScaleType.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>428, 111</value>
+  </data>
+  <data name="cbVideoScaleType.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>126, 23</value>
+  </data>
+  <data name="cbVideoScaleType.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;cbVideoScaleType.Name" xml:space="preserve">
+    <value>cbVideoScaleType</value>
+  </data>
+  <data name="&gt;&gt;cbVideoScaleType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbVideoScaleType.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;cbVideoScaleType.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="txtVideoScale.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtVideoScale.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>139, 111</value>
+  </data>
+  <data name="txtVideoScale.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>283, 23</value>
+  </data>
+  <data name="txtVideoScale.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;txtVideoScale.Name" xml:space="preserve">
+    <value>txtVideoScale</value>
+  </data>
+  <data name="&gt;&gt;txtVideoScale.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtVideoScale.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;txtVideoScale.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="lblVideoScale.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="lblVideoScale.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 114</value>
+  </data>
+  <data name="lblVideoScale.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>34, 15</value>
+  </data>
+  <data name="lblVideoScale.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>10</value>
+  </data>
+  <data name="lblVideoScale.Text" xml:space="preserve">
+    <value>Scale</value>
+  </data>
+  <data name="&gt;&gt;lblVideoScale.Name" xml:space="preserve">
+    <value>lblVideoScale</value>
+  </data>
+  <data name="&gt;&gt;lblVideoScale.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblVideoScale.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;lblVideoScale.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="txtVideoImagesPerSecond.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtVideoImagesPerSecond.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>139, 81</value>
+  </data>
+  <data name="txtVideoImagesPerSecond.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>283, 23</value>
+  </data>
+  <data name="txtVideoImagesPerSecond.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;txtVideoImagesPerSecond.Name" xml:space="preserve">
+    <value>txtVideoImagesPerSecond</value>
+  </data>
+  <data name="&gt;&gt;txtVideoImagesPerSecond.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtVideoImagesPerSecond.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;txtVideoImagesPerSecond.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="lblVideoImagesPerSecond.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="lblVideoImagesPerSecond.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 84</value>
+  </data>
+  <data name="lblVideoImagesPerSecond.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>106, 15</value>
+  </data>
+  <data name="lblVideoImagesPerSecond.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>8</value>
+  </data>
+  <data name="lblVideoImagesPerSecond.Text" xml:space="preserve">
+    <value>Images per second</value>
+  </data>
+  <data name="&gt;&gt;lblVideoImagesPerSecond.Name" xml:space="preserve">
+    <value>lblVideoImagesPerSecond</value>
+  </data>
+  <data name="&gt;&gt;lblVideoImagesPerSecond.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblVideoImagesPerSecond.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;lblVideoImagesPerSecond.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="txtVideoFilePattern.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtVideoFilePattern.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>139, 51</value>
+  </data>
+  <data name="txtVideoFilePattern.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>283, 23</value>
+  </data>
+  <data name="txtVideoFilePattern.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;txtVideoFilePattern.Name" xml:space="preserve">
+    <value>txtVideoFilePattern</value>
+  </data>
+  <data name="&gt;&gt;txtVideoFilePattern.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtVideoFilePattern.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;txtVideoFilePattern.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="lblVideoFilePattern.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="lblVideoFilePattern.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 54</value>
+  </data>
+  <data name="lblVideoFilePattern.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>66, 15</value>
+  </data>
+  <data name="lblVideoFilePattern.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>6</value>
+  </data>
+  <data name="lblVideoFilePattern.Text" xml:space="preserve">
+    <value>File pattern</value>
+  </data>
+  <data name="&gt;&gt;lblVideoFilePattern.Name" xml:space="preserve">
+    <value>lblVideoFilePattern</value>
+  </data>
+  <data name="&gt;&gt;lblVideoFilePattern.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblVideoFilePattern.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;lblVideoFilePattern.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="btnSelectVideoConverterPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnSelectVideoConverterPath.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>427, 20</value>
+  </data>
+  <data name="btnSelectVideoConverterPath.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>60, 25</value>
+  </data>
+  <data name="btnSelectVideoConverterPath.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>5</value>
+  </data>
+  <data name="btnSelectVideoConverterPath.Text" xml:space="preserve">
+    <value>Select...</value>
+  </data>
+  <data name="&gt;&gt;btnSelectVideoConverterPath.Name" xml:space="preserve">
+    <value>btnSelectVideoConverterPath</value>
+  </data>
+  <data name="&gt;&gt;btnSelectVideoConverterPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSelectVideoConverterPath.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;btnSelectVideoConverterPath.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="txtVideoConverterPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtVideoConverterPath.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>139, 21</value>
+  </data>
+  <data name="txtVideoConverterPath.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>283, 23</value>
+  </data>
+  <data name="txtVideoConverterPath.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtVideoConverterPath.Name" xml:space="preserve">
+    <value>txtVideoConverterPath</value>
+  </data>
+  <data name="&gt;&gt;txtVideoConverterPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtVideoConverterPath.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;txtVideoConverterPath.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="lblVideoConverterPath.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="lblVideoConverterPath.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 24</value>
+  </data>
+  <data name="lblVideoConverterPath.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>108, 15</value>
+  </data>
+  <data name="lblVideoConverterPath.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>0</value>
+  </data>
+  <data name="lblVideoConverterPath.Text" xml:space="preserve">
+    <value>Path to ffmpeg.exe</value>
+  </data>
+  <data name="&gt;&gt;lblVideoConverterPath.Name" xml:space="preserve">
+    <value>lblVideoConverterPath</value>
+  </data>
+  <data name="&gt;&gt;lblVideoConverterPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblVideoConverterPath.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;lblVideoConverterPath.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="gbOptions.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 50</value>
+  </data>
+  <data name="gbOptions.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>560, 238</value>
+  </data>
+  <data name="gbOptions.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>0</value>
+  </data>
+  <data name="gbOptions.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="&gt;&gt;gbOptions.Name" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;gbOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbOptions.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gbOptions.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblInfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblInfo.LinkArea" type="System.Windows.Forms.LinkArea, System.Windows.Forms">
+    <value>85, 21</value>
+  </data>
+  <data name="lblInfo.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 9</value>
+  </data>
+  <data name="lblInfo.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>560, 38</value>
+  </data>
+  <data name="lblInfo.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>0</value>
+  </data>
+  <data name="lblInfo.Text" xml:space="preserve">
+    <value>Screenshot Bot can use ffmpeg to create a video made of screenshots inside a folder. Download ffmpeg here. Please make sure to install a release with libx264 support.</value>
+  </data>
+  <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+  <data name="lblInfo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing.Common">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblInfo.Name" xml:space="preserve">
+    <value>lblInfo</value>
+  </data>
+  <data name="&gt;&gt;lblInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblInfo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblInfo.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tsStatus.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>39, 17</value>
+  </data>
+  <data name="tsStatus.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="statusStrip.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>0, 559</value>
+  </data>
+  <data name="statusStrip.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>584, 22</value>
+  </data>
+  <data name="statusStrip.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>11</value>
+  </data>
+  <data name="statusStrip.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Name" xml:space="preserve">
+    <value>statusStrip</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gbStatus.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="txtEstimatedDuration.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtEstimatedDuration.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe UI, 6.75pt</value>
+  </data>
+  <data name="txtEstimatedDuration.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>76, 86</value>
+  </data>
+  <data name="txtEstimatedDuration.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>270, 19</value>
+  </data>
+  <data name="txtEstimatedDuration.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>7</value>
+  </data>
+  <data name="txtEstimatedDuration.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;txtEstimatedDuration.Name" xml:space="preserve">
+    <value>txtEstimatedDuration</value>
+  </data>
+  <data name="&gt;&gt;txtEstimatedDuration.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtEstimatedDuration.Parent" xml:space="preserve">
+    <value>gbStatus</value>
+  </data>
+  <data name="&gt;&gt;txtEstimatedDuration.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtFirstFileDimensions.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtFirstFileDimensions.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe UI, 6.75pt</value>
+  </data>
+  <data name="txtFirstFileDimensions.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>76, 65</value>
+  </data>
+  <data name="txtFirstFileDimensions.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>270, 19</value>
+  </data>
+  <data name="txtFirstFileDimensions.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>6</value>
+  </data>
+  <data name="txtFirstFileDimensions.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;txtFirstFileDimensions.Name" xml:space="preserve">
+    <value>txtFirstFileDimensions</value>
+  </data>
+  <data name="&gt;&gt;txtFirstFileDimensions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtFirstFileDimensions.Parent" xml:space="preserve">
+    <value>gbStatus</value>
+  </data>
+  <data name="&gt;&gt;txtFirstFileDimensions.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtFirstFile.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtFirstFile.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe UI, 6.75pt</value>
+  </data>
+  <data name="txtFirstFile.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>76, 44</value>
+  </data>
+  <data name="txtFirstFile.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>270, 19</value>
+  </data>
+  <data name="txtFirstFile.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>5</value>
+  </data>
+  <data name="txtFirstFile.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;txtFirstFile.Name" xml:space="preserve">
+    <value>txtFirstFile</value>
+  </data>
+  <data name="&gt;&gt;txtFirstFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtFirstFile.Parent" xml:space="preserve">
+    <value>gbStatus</value>
+  </data>
+  <data name="&gt;&gt;txtFirstFile.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtFileCount.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtFileCount.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe UI, 6.75pt</value>
+  </data>
+  <data name="txtFileCount.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>76, 23</value>
+  </data>
+  <data name="txtFileCount.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>270, 19</value>
+  </data>
+  <data name="txtFileCount.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>4</value>
+  </data>
+  <data name="txtFileCount.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;txtFileCount.Name" xml:space="preserve">
+    <value>txtFileCount</value>
+  </data>
+  <data name="&gt;&gt;txtFileCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtFileCount.Parent" xml:space="preserve">
+    <value>gbStatus</value>
+  </data>
+  <data name="&gt;&gt;txtFileCount.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblEstimatedDuration.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="lblEstimatedDuration.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe UI, 6.75pt</value>
+  </data>
+  <data name="lblEstimatedDuration.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 89</value>
+  </data>
+  <data name="lblEstimatedDuration.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>39, 12</value>
+  </data>
+  <data name="lblEstimatedDuration.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>3</value>
+  </data>
+  <data name="lblEstimatedDuration.Text" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="&gt;&gt;lblEstimatedDuration.Name" xml:space="preserve">
+    <value>lblEstimatedDuration</value>
+  </data>
+  <data name="&gt;&gt;lblEstimatedDuration.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblEstimatedDuration.Parent" xml:space="preserve">
+    <value>gbStatus</value>
+  </data>
+  <data name="&gt;&gt;lblEstimatedDuration.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblFirstFileDimensions.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="lblFirstFileDimensions.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe UI, 6.75pt</value>
+  </data>
+  <data name="lblFirstFileDimensions.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 68</value>
+  </data>
+  <data name="lblFirstFileDimensions.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>51, 12</value>
+  </data>
+  <data name="lblFirstFileDimensions.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>2</value>
+  </data>
+  <data name="lblFirstFileDimensions.Text" xml:space="preserve">
+    <value>Dimensions</value>
+  </data>
+  <data name="&gt;&gt;lblFirstFileDimensions.Name" xml:space="preserve">
+    <value>lblFirstFileDimensions</value>
+  </data>
+  <data name="&gt;&gt;lblFirstFileDimensions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblFirstFileDimensions.Parent" xml:space="preserve">
+    <value>gbStatus</value>
+  </data>
+  <data name="&gt;&gt;lblFirstFileDimensions.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblFirstFile.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="lblFirstFile.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe UI, 6.75pt</value>
+  </data>
+  <data name="lblFirstFile.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 47</value>
+  </data>
+  <data name="lblFirstFile.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>36, 12</value>
+  </data>
+  <data name="lblFirstFile.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>1</value>
+  </data>
+  <data name="lblFirstFile.Text" xml:space="preserve">
+    <value>First File</value>
+  </data>
+  <data name="&gt;&gt;lblFirstFile.Name" xml:space="preserve">
+    <value>lblFirstFile</value>
+  </data>
+  <data name="&gt;&gt;lblFirstFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblFirstFile.Parent" xml:space="preserve">
+    <value>gbStatus</value>
+  </data>
+  <data name="&gt;&gt;lblFirstFile.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblFileCount.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="lblFileCount.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe UI, 6.75pt</value>
+  </data>
+  <data name="lblFileCount.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 26</value>
+  </data>
+  <data name="lblFileCount.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>44, 12</value>
+  </data>
+  <data name="lblFileCount.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>0</value>
+  </data>
+  <data name="lblFileCount.Text" xml:space="preserve">
+    <value>File Count</value>
+  </data>
+  <data name="&gt;&gt;lblFileCount.Name" xml:space="preserve">
+    <value>lblFileCount</value>
+  </data>
+  <data name="&gt;&gt;lblFileCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblFileCount.Parent" xml:space="preserve">
+    <value>gbStatus</value>
+  </data>
+  <data name="&gt;&gt;lblFileCount.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="gbStatus.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 433</value>
+  </data>
+  <data name="gbStatus.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>352, 114</value>
+  </data>
+  <data name="gbStatus.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>10</value>
+  </data>
+  <data name="gbStatus.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="&gt;&gt;gbStatus.Name" xml:space="preserve">
+    <value>gbStatus</value>
+  </data>
+  <data name="&gt;&gt;gbStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbStatus.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gbStatus.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnStartStop.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnStartStop.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Micro Technic Extended, 24pt, style=Bold</value>
+  </data>
+  <data name="btnStartStop.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>370, 440</value>
+  </data>
+  <data name="btnStartStop.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>202, 107</value>
+  </data>
+  <data name="btnStartStop.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>9</value>
+  </data>
+  <data name="btnStartStop.Text" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="&gt;&gt;btnStartStop.Name" xml:space="preserve">
+    <value>btnStartStop</value>
+  </data>
+  <data name="&gt;&gt;btnStartStop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnStartStop.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnStartStop.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="gbCommand.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="chkUseVideoConverterCustomCommand.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="chkUseVideoConverterCustomCommand.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="chkUseVideoConverterCustomCommand.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkUseVideoConverterCustomCommand.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>82, 107</value>
+  </data>
+  <data name="chkUseVideoConverterCustomCommand.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>15, 14</value>
+  </data>
+  <data name="chkUseVideoConverterCustomCommand.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;chkUseVideoConverterCustomCommand.Name" xml:space="preserve">
+    <value>chkUseVideoConverterCustomCommand</value>
+  </data>
+  <data name="&gt;&gt;chkUseVideoConverterCustomCommand.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkUseVideoConverterCustomCommand.Parent" xml:space="preserve">
+    <value>gbCommand</value>
+  </data>
+  <data name="&gt;&gt;chkUseVideoConverterCustomCommand.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblVideoConverterCustomCommand.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="lblVideoConverterCustomCommand.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="lblVideoConverterCustomCommand.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblVideoConverterCustomCommand.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 106</value>
+  </data>
+  <data name="lblVideoConverterCustomCommand.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>63, 15</value>
+  </data>
+  <data name="lblVideoConverterCustomCommand.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>14</value>
+  </data>
+  <data name="lblVideoConverterCustomCommand.Text" xml:space="preserve">
+    <value>Customize</value>
+  </data>
+  <data name="&gt;&gt;lblVideoConverterCustomCommand.Name" xml:space="preserve">
+    <value>lblVideoConverterCustomCommand</value>
+  </data>
+  <data name="&gt;&gt;lblVideoConverterCustomCommand.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblVideoConverterCustomCommand.Parent" xml:space="preserve">
+    <value>gbCommand</value>
+  </data>
+  <data name="&gt;&gt;lblVideoConverterCustomCommand.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtVideoConverterCommand.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="txtVideoConverterCommand.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 22</value>
+  </data>
+  <data name="txtVideoConverterCommand.Multiline" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="txtVideoConverterCommand.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Both</value>
+  </data>
+  <data name="txtVideoConverterCommand.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>542, 79</value>
+  </data>
+  <data name="txtVideoConverterCommand.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtVideoConverterCommand.Name" xml:space="preserve">
+    <value>txtVideoConverterCommand</value>
+  </data>
+  <data name="&gt;&gt;txtVideoConverterCommand.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtVideoConverterCommand.Parent" xml:space="preserve">
+    <value>gbCommand</value>
+  </data>
+  <data name="&gt;&gt;txtVideoConverterCommand.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="gbCommand.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 294</value>
+  </data>
+  <data name="gbCommand.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>560, 133</value>
+  </data>
+  <data name="gbCommand.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>12</value>
+  </data>
+  <data name="gbCommand.Text" xml:space="preserve">
+    <value>Command</value>
+  </data>
+  <data name="&gt;&gt;gbCommand.Name" xml:space="preserve">
+    <value>gbCommand</value>
+  </data>
+  <data name="&gt;&gt;gbCommand.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbCommand.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gbCommand.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing.Primitives">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>584, 581</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAGABoAwAAFgAAACgAAAAQAAAAIAAAAAEAGAAAAAAAAAAAAGAAAABgAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//3w//3w//3w//3w//3w/
+        /3w//3w//3w//3w//3w//3w//3wAAAAAAAAAAAAAAAA//3w//3w//3w//3w//3w//3w//3w//3w//3w/
+        /3w//3w//3wAAAAAAAAAAAAAAAA//3w//3w//3w//3w//3w//3w//3w//3w//3w//3w//3w//3wAAAAA
+        AAAAAAAAAAA//3w//3w//3w//3w//3w//3w//3w//3w//3w//3w//3w//3wAAAAAAAAAAAAAAAA//3w/
+        /3w//3w//3w//3w//3w//3w//3w//3w//3w//3w//3wAAAAAAAAAAAAAAAA//3w//3w//3w//3w//3w/
+        /3w//3w//3w//3w//3w//3w//3wAAAAAAAAAAAAAAAA//3w//3w//3w//3w//3w//3wAAAA//3wAAAA/
+        /3wAAAA//3wAAAAAAAAAAAAAAAA//3w//3w//3w//3w//3w//3w//3wAAAAAAAAAAAA//3w//3wAAAAA
+        AAAAAAAAAAA//3w//3w//3w//3w//3w//3wAAAAAAAAAAAAAAAAAAAA//3wAAAAAAAAAAAAAAAA//3w/
+        /3w//3w//3w//3w//3w//3wAAAAAAAAAAAA//3w//3wAAAAAAAAAAAAAAAA//3w//3w//3w//3w//3w/
+        /3wAAAA//3wAAAA//3wAAAA//3wAAAAAAAAAAAAAAAA//3w//3w//3w//3w//3w//3w//3w//3w//3w/
+        /3w//3w//3wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>600, 620</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Create video</value>
+  </data>
+  <data name="&gt;&gt;tsStatus.Name" xml:space="preserve">
+    <value>tsStatus</value>
+  </data>
+  <data name="&gt;&gt;tsStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolTipStart.Name" xml:space="preserve">
+    <value>toolTipStart</value>
+  </data>
+  <data name="&gt;&gt;toolTipStart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>DialogCreateVideo</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

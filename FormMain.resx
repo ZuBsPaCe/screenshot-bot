@@ -1,0 +1,1131 @@
+﻿<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Private.CoreLib" name="System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
+  <data name="contextMenuNotifyIcon.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>False</value>
+  </data>
+  <assembly alias="System.Drawing.Primitives" name="System.Drawing.Primitives, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="miNotifyIconShow.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>78, 22</value>
+  </data>
+  <data name="miNotifyIconShow.Text" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="mitNotifyIconStartStop.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>78, 22</value>
+  </data>
+  <data name="mitNotifyIconStartStop.Text" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="miNotifyIconSeparator.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>46, 6</value>
+  </data>
+  <data name="miNotifyIconExit.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>78, 22</value>
+  </data>
+  <data name="miNotifyIconExit.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="contextMenuNotifyIcon.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>50, 76</value>
+  </data>
+  <data name="&gt;&gt;contextMenuNotifyIcon.Name" xml:space="preserve">
+    <value>contextMenuNotifyIcon</value>
+  </data>
+  <data name="&gt;&gt;contextMenuNotifyIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+  <data name="notifyIcon.Icon" type="System.Drawing.Icon, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAGABoAwAAFgAAACgAAAAQAAAAIAAAAAEAGAAAAAAAAAAAAGAAAABgAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//3w//3w//3w//3w//3w/
+        /3w//3w//3w//3w//3w//3w//3wAAAAAAAAAAAAAAAA//3w//3w//3w//3w//3w//3w//3w//3w//3w/
+        /3w//3w//3wAAAAAAAAAAAAAAAA//3w//3w//3w//3w//3w//3w//3w//3w//3w//3w//3w//3wAAAAA
+        AAAAAAAAAAA//3w//3w//3w//3w//3w//3w//3w//3w//3w//3w//3w//3wAAAAAAAAAAAAAAAA//3w/
+        /3w//3w//3w//3w//3w//3w//3w//3w//3w//3w//3wAAAAAAAAAAAAAAAA//3w//3w//3w//3w//3w/
+        /3w//3w//3w//3w//3w//3w//3wAAAAAAAAAAAAAAAA//3w//3w//3w//3w//3w//3wAAAA//3wAAAA/
+        /3wAAAA//3wAAAAAAAAAAAAAAAA//3w//3w//3w//3w//3w//3w//3wAAAAAAAAAAAA//3w//3wAAAAA
+        AAAAAAAAAAA//3w//3w//3w//3w//3w//3wAAAAAAAAAAAAAAAAAAAA//3wAAAAAAAAAAAAAAAA//3w/
+        /3w//3w//3w//3w//3w//3wAAAAAAAAAAAA//3w//3wAAAAAAAAAAAAAAAA//3w//3w//3w//3w//3w/
+        /3wAAAA//3wAAAA//3wAAAA//3wAAAAAAAAAAAAAAAA//3w//3w//3w//3w//3w//3w//3w//3w//3w/
+        /3w//3w//3wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+</value>
+  </data>
+  <data name="notifyIcon.Text" xml:space="preserve">
+    <value>Screenshot Bot</value>
+  </data>
+  <data name="notifyIcon.Visible" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="gbOptions.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="btnFilenamesAddVariable.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnFilenamesAddVariable.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>367, 109</value>
+  </data>
+  <data name="btnFilenamesAddVariable.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>127, 25</value>
+  </data>
+  <data name="btnFilenamesAddVariable.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>14</value>
+  </data>
+  <data name="btnFilenamesAddVariable.Text" xml:space="preserve">
+    <value>Add variable</value>
+  </data>
+  <data name="&gt;&gt;btnFilenamesAddVariable.Name" xml:space="preserve">
+    <value>btnFilenamesAddVariable</value>
+  </data>
+  <data name="&gt;&gt;btnFilenamesAddVariable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnFilenamesAddVariable.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;btnFilenamesAddVariable.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtScreenShotFilename.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtScreenShotFilename.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>134, 110</value>
+  </data>
+  <data name="txtScreenShotFilename.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>228, 23</value>
+  </data>
+  <data name="txtScreenShotFilename.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;txtScreenShotFilename.Name" xml:space="preserve">
+    <value>txtScreenShotFilename</value>
+  </data>
+  <data name="&gt;&gt;txtScreenShotFilename.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtScreenShotFilename.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;txtScreenShotFilename.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblFilenames.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="lblFilenames.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 114</value>
+  </data>
+  <data name="lblFilenames.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>60, 15</value>
+  </data>
+  <data name="lblFilenames.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>12</value>
+  </data>
+  <data name="lblFilenames.Text" xml:space="preserve">
+    <value>Filenames</value>
+  </data>
+  <data name="&gt;&gt;lblFilenames.Name" xml:space="preserve">
+    <value>lblFilenames</value>
+  </data>
+  <data name="&gt;&gt;lblFilenames.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblFilenames.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;lblFilenames.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnSubdirectoryAddVariable.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnSubdirectoryAddVariable.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>367, 79</value>
+  </data>
+  <data name="btnSubdirectoryAddVariable.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>127, 25</value>
+  </data>
+  <data name="btnSubdirectoryAddVariable.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>11</value>
+  </data>
+  <data name="btnSubdirectoryAddVariable.Text" xml:space="preserve">
+    <value>Add variable</value>
+  </data>
+  <data name="&gt;&gt;btnSubdirectoryAddVariable.Name" xml:space="preserve">
+    <value>btnSubdirectoryAddVariable</value>
+  </data>
+  <data name="&gt;&gt;btnSubdirectoryAddVariable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSubdirectoryAddVariable.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;btnSubdirectoryAddVariable.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtScreenShotSubDir.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtScreenShotSubDir.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>134, 80</value>
+  </data>
+  <data name="txtScreenShotSubDir.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>228, 23</value>
+  </data>
+  <data name="txtScreenShotSubDir.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;txtScreenShotSubDir.Name" xml:space="preserve">
+    <value>txtScreenShotSubDir</value>
+  </data>
+  <data name="&gt;&gt;txtScreenShotSubDir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtScreenShotSubDir.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;txtScreenShotSubDir.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblSubdirectory.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="lblSubdirectory.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 84</value>
+  </data>
+  <data name="lblSubdirectory.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>74, 15</value>
+  </data>
+  <data name="lblSubdirectory.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>9</value>
+  </data>
+  <data name="lblSubdirectory.Text" xml:space="preserve">
+    <value>Subdirectory</value>
+  </data>
+  <data name="&gt;&gt;lblSubdirectory.Name" xml:space="preserve">
+    <value>lblSubdirectory</value>
+  </data>
+  <data name="&gt;&gt;lblSubdirectory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSubdirectory.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;lblSubdirectory.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cbScreenShotIntervalUnit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="cbScreenShotIntervalUnit.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>368, 140</value>
+  </data>
+  <data name="cbScreenShotIntervalUnit.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>126, 23</value>
+  </data>
+  <data name="cbScreenShotIntervalUnit.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;cbScreenShotIntervalUnit.Name" xml:space="preserve">
+    <value>cbScreenShotIntervalUnit</value>
+  </data>
+  <data name="&gt;&gt;cbScreenShotIntervalUnit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbScreenShotIntervalUnit.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;cbScreenShotIntervalUnit.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtScreenShotInterval.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtScreenShotInterval.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>134, 140</value>
+  </data>
+  <data name="txtScreenShotInterval.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>228, 23</value>
+  </data>
+  <data name="txtScreenShotInterval.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;txtScreenShotInterval.Name" xml:space="preserve">
+    <value>txtScreenShotInterval</value>
+  </data>
+  <data name="&gt;&gt;txtScreenShotInterval.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtScreenShotInterval.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;txtScreenShotInterval.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblScreenShotInterval.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="lblScreenShotInterval.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 144</value>
+  </data>
+  <data name="lblScreenShotInterval.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>107, 15</value>
+  </data>
+  <data name="lblScreenShotInterval.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>6</value>
+  </data>
+  <data name="lblScreenShotInterval.Text" xml:space="preserve">
+    <value>Screenshot Interval</value>
+  </data>
+  <data name="&gt;&gt;lblScreenShotInterval.Name" xml:space="preserve">
+    <value>lblScreenShotInterval</value>
+  </data>
+  <data name="&gt;&gt;lblScreenShotInterval.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblScreenShotInterval.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;lblScreenShotInterval.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="btnOpenScreenShotDirectory.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnOpenScreenShotDirectory.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>435, 49</value>
+  </data>
+  <data name="btnOpenScreenShotDirectory.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>60, 25</value>
+  </data>
+  <data name="btnOpenScreenShotDirectory.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>5</value>
+  </data>
+  <data name="btnOpenScreenShotDirectory.Text" xml:space="preserve">
+    <value>Open...</value>
+  </data>
+  <data name="&gt;&gt;btnOpenScreenShotDirectory.Name" xml:space="preserve">
+    <value>btnOpenScreenShotDirectory</value>
+  </data>
+  <data name="&gt;&gt;btnOpenScreenShotDirectory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOpenScreenShotDirectory.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;btnOpenScreenShotDirectory.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="btnSelectScreenShotDirectory.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnSelectScreenShotDirectory.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>367, 49</value>
+  </data>
+  <data name="btnSelectScreenShotDirectory.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>60, 25</value>
+  </data>
+  <data name="btnSelectScreenShotDirectory.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>4</value>
+  </data>
+  <data name="btnSelectScreenShotDirectory.Text" xml:space="preserve">
+    <value>Select...</value>
+  </data>
+  <data name="&gt;&gt;btnSelectScreenShotDirectory.Name" xml:space="preserve">
+    <value>btnSelectScreenShotDirectory</value>
+  </data>
+  <data name="&gt;&gt;btnSelectScreenShotDirectory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSelectScreenShotDirectory.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;btnSelectScreenShotDirectory.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="txtScreenShotDirectory.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtScreenShotDirectory.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>134, 50</value>
+  </data>
+  <data name="txtScreenShotDirectory.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>228, 23</value>
+  </data>
+  <data name="txtScreenShotDirectory.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtScreenShotDirectory.Name" xml:space="preserve">
+    <value>txtScreenShotDirectory</value>
+  </data>
+  <data name="&gt;&gt;txtScreenShotDirectory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtScreenShotDirectory.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;txtScreenShotDirectory.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="lblScreenShotDirectory.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="lblScreenShotDirectory.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 54</value>
+  </data>
+  <data name="lblScreenShotDirectory.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>116, 15</value>
+  </data>
+  <data name="lblScreenShotDirectory.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>2</value>
+  </data>
+  <data name="lblScreenShotDirectory.Text" xml:space="preserve">
+    <value>Screenshot Directory</value>
+  </data>
+  <data name="&gt;&gt;lblScreenShotDirectory.Name" xml:space="preserve">
+    <value>lblScreenShotDirectory</value>
+  </data>
+  <data name="&gt;&gt;lblScreenShotDirectory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblScreenShotDirectory.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;lblScreenShotDirectory.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="lblScreen.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="lblScreen.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 24</value>
+  </data>
+  <data name="lblScreen.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>42, 15</value>
+  </data>
+  <data name="lblScreen.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>1</value>
+  </data>
+  <data name="lblScreen.Text" xml:space="preserve">
+    <value>Screen</value>
+  </data>
+  <data name="&gt;&gt;lblScreen.Name" xml:space="preserve">
+    <value>lblScreen</value>
+  </data>
+  <data name="&gt;&gt;lblScreen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblScreen.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;lblScreen.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="cbScreen.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="cbScreen.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>134, 20</value>
+  </data>
+  <data name="cbScreen.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>360, 23</value>
+  </data>
+  <data name="cbScreen.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cbScreen.Name" xml:space="preserve">
+    <value>cbScreen</value>
+  </data>
+  <data name="&gt;&gt;cbScreen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbScreen.Parent" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;cbScreen.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="gbOptions.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 27</value>
+  </data>
+  <data name="gbOptions.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>500, 176</value>
+  </data>
+  <data name="gbOptions.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>1</value>
+  </data>
+  <data name="gbOptions.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="&gt;&gt;gbOptions.Name" xml:space="preserve">
+    <value>gbOptions</value>
+  </data>
+  <data name="&gt;&gt;gbOptions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbOptions.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gbOptions.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="miExit.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Alt+Q</value>
+  </data>
+  <data name="miExit.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>132, 22</value>
+  </data>
+  <data name="miExit.Text" xml:space="preserve">
+    <value>E&amp;xit</value>
+  </data>
+  <data name="tsFile.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>37, 20</value>
+  </data>
+  <data name="tsFile.Text" xml:space="preserve">
+    <value>&amp;File</value>
+  </data>
+  <data name="miPreferences.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>144, 22</value>
+  </data>
+  <data name="miPreferences.Text" xml:space="preserve">
+    <value>&amp;Preferences...</value>
+  </data>
+  <data name="tsEdit.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>39, 20</value>
+  </data>
+  <data name="tsEdit.Text" xml:space="preserve">
+    <value>&amp;Edit</value>
+  </data>
+  <data name="miCreateVideo.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>149, 22</value>
+  </data>
+  <data name="miCreateVideo.Text" xml:space="preserve">
+    <value>Create &amp;video...</value>
+  </data>
+  <data name="tsTools.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>46, 20</value>
+  </data>
+  <data name="tsTools.Text" xml:space="preserve">
+    <value>&amp;Tools</value>
+  </data>
+  <data name="miAbout.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>116, 22</value>
+  </data>
+  <data name="miAbout.Text" xml:space="preserve">
+    <value>&amp;About...</value>
+  </data>
+  <data name="tsHelp.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>44, 20</value>
+  </data>
+  <data name="tsHelp.Text" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="menuStrip.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>0, 0</value>
+  </data>
+  <data name="menuStrip.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>524, 24</value>
+  </data>
+  <data name="menuStrip.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>2</value>
+  </data>
+  <data name="menuStrip.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip.Name" xml:space="preserve">
+    <value>menuStrip</value>
+  </data>
+  <data name="&gt;&gt;menuStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStrip.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="pbPreview.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="pbPreview.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>6, 22</value>
+  </data>
+  <data name="pbPreview.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>488, 272</value>
+  </data>
+  <data name="pbPreview.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pbPreview.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pbPreview.Name" xml:space="preserve">
+    <value>pbPreview</value>
+  </data>
+  <data name="&gt;&gt;pbPreview.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbPreview.Parent" xml:space="preserve">
+    <value>gbPreview</value>
+  </data>
+  <data name="&gt;&gt;pbPreview.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gbPreview.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="gbPreview.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 209</value>
+  </data>
+  <data name="gbPreview.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>500, 300</value>
+  </data>
+  <data name="gbPreview.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>3</value>
+  </data>
+  <data name="gbPreview.Text" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="&gt;&gt;gbPreview.Name" xml:space="preserve">
+    <value>gbPreview</value>
+  </data>
+  <data name="&gt;&gt;gbPreview.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbPreview.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gbPreview.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnStartStop.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnStartStop.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Micro Technic Extended, 24pt, style=Bold</value>
+  </data>
+  <data name="btnStartStop.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>310, 522</value>
+  </data>
+  <data name="btnStartStop.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>202, 107</value>
+  </data>
+  <data name="btnStartStop.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>6</value>
+  </data>
+  <data name="btnStartStop.Text" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="&gt;&gt;btnStartStop.Name" xml:space="preserve">
+    <value>btnStartStop</value>
+  </data>
+  <data name="&gt;&gt;btnStartStop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnStartStop.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnStartStop.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="gbStatus.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="txtTotalSize.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtTotalSize.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe UI, 6.75pt</value>
+  </data>
+  <data name="txtTotalSize.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>76, 86</value>
+  </data>
+  <data name="txtTotalSize.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>210, 19</value>
+  </data>
+  <data name="txtTotalSize.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>7</value>
+  </data>
+  <data name="txtTotalSize.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;txtTotalSize.Name" xml:space="preserve">
+    <value>txtTotalSize</value>
+  </data>
+  <data name="&gt;&gt;txtTotalSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtTotalSize.Parent" xml:space="preserve">
+    <value>gbStatus</value>
+  </data>
+  <data name="&gt;&gt;txtTotalSize.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtSavedFiles.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtSavedFiles.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe UI, 6.75pt</value>
+  </data>
+  <data name="txtSavedFiles.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>76, 65</value>
+  </data>
+  <data name="txtSavedFiles.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>210, 19</value>
+  </data>
+  <data name="txtSavedFiles.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>6</value>
+  </data>
+  <data name="txtSavedFiles.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;txtSavedFiles.Name" xml:space="preserve">
+    <value>txtSavedFiles</value>
+  </data>
+  <data name="&gt;&gt;txtSavedFiles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtSavedFiles.Parent" xml:space="preserve">
+    <value>gbStatus</value>
+  </data>
+  <data name="&gt;&gt;txtSavedFiles.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtLastFile.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtLastFile.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe UI, 6.75pt</value>
+  </data>
+  <data name="txtLastFile.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>76, 44</value>
+  </data>
+  <data name="txtLastFile.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>210, 19</value>
+  </data>
+  <data name="txtLastFile.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>5</value>
+  </data>
+  <data name="txtLastFile.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;txtLastFile.Name" xml:space="preserve">
+    <value>txtLastFile</value>
+  </data>
+  <data name="&gt;&gt;txtLastFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtLastFile.Parent" xml:space="preserve">
+    <value>gbStatus</value>
+  </data>
+  <data name="&gt;&gt;txtLastFile.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtCountdown.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtCountdown.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe UI, 6.75pt</value>
+  </data>
+  <data name="txtCountdown.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>76, 23</value>
+  </data>
+  <data name="txtCountdown.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>210, 19</value>
+  </data>
+  <data name="txtCountdown.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>4</value>
+  </data>
+  <data name="txtCountdown.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;txtCountdown.Name" xml:space="preserve">
+    <value>txtCountdown</value>
+  </data>
+  <data name="&gt;&gt;txtCountdown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtCountdown.Parent" xml:space="preserve">
+    <value>gbStatus</value>
+  </data>
+  <data name="&gt;&gt;txtCountdown.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblTotalSize.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="lblTotalSize.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe UI, 6.75pt</value>
+  </data>
+  <data name="lblTotalSize.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 89</value>
+  </data>
+  <data name="lblTotalSize.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>42, 12</value>
+  </data>
+  <data name="lblTotalSize.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>3</value>
+  </data>
+  <data name="lblTotalSize.Text" xml:space="preserve">
+    <value>Total Size</value>
+  </data>
+  <data name="&gt;&gt;lblTotalSize.Name" xml:space="preserve">
+    <value>lblTotalSize</value>
+  </data>
+  <data name="&gt;&gt;lblTotalSize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTotalSize.Parent" xml:space="preserve">
+    <value>gbStatus</value>
+  </data>
+  <data name="&gt;&gt;lblTotalSize.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblSavedFiles.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="lblSavedFiles.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe UI, 6.75pt</value>
+  </data>
+  <data name="lblSavedFiles.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 68</value>
+  </data>
+  <data name="lblSavedFiles.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>48, 12</value>
+  </data>
+  <data name="lblSavedFiles.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>2</value>
+  </data>
+  <data name="lblSavedFiles.Text" xml:space="preserve">
+    <value>Saved Files</value>
+  </data>
+  <data name="&gt;&gt;lblSavedFiles.Name" xml:space="preserve">
+    <value>lblSavedFiles</value>
+  </data>
+  <data name="&gt;&gt;lblSavedFiles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSavedFiles.Parent" xml:space="preserve">
+    <value>gbStatus</value>
+  </data>
+  <data name="&gt;&gt;lblSavedFiles.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblLastFile.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="lblLastFile.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe UI, 6.75pt</value>
+  </data>
+  <data name="lblLastFile.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 47</value>
+  </data>
+  <data name="lblLastFile.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>36, 12</value>
+  </data>
+  <data name="lblLastFile.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>1</value>
+  </data>
+  <data name="lblLastFile.Text" xml:space="preserve">
+    <value>Last File</value>
+  </data>
+  <data name="&gt;&gt;lblLastFile.Name" xml:space="preserve">
+    <value>lblLastFile</value>
+  </data>
+  <data name="&gt;&gt;lblLastFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblLastFile.Parent" xml:space="preserve">
+    <value>gbStatus</value>
+  </data>
+  <data name="&gt;&gt;lblLastFile.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblCountdown.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="lblCountdown.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe UI, 6.75pt</value>
+  </data>
+  <data name="lblCountdown.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 26</value>
+  </data>
+  <data name="lblCountdown.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>51, 12</value>
+  </data>
+  <data name="lblCountdown.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>0</value>
+  </data>
+  <data name="lblCountdown.Text" xml:space="preserve">
+    <value>Countdown</value>
+  </data>
+  <data name="&gt;&gt;lblCountdown.Name" xml:space="preserve">
+    <value>lblCountdown</value>
+  </data>
+  <data name="&gt;&gt;lblCountdown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCountdown.Parent" xml:space="preserve">
+    <value>gbStatus</value>
+  </data>
+  <data name="&gt;&gt;lblCountdown.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="gbStatus.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 515</value>
+  </data>
+  <data name="gbStatus.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>292, 114</value>
+  </data>
+  <data name="gbStatus.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>7</value>
+  </data>
+  <data name="gbStatus.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="&gt;&gt;gbStatus.Name" xml:space="preserve">
+    <value>gbStatus</value>
+  </data>
+  <data name="&gt;&gt;gbStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbStatus.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gbStatus.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tsStatus.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>39, 17</value>
+  </data>
+  <data name="tsStatus.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="statusStrip.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>0, 639</value>
+  </data>
+  <data name="statusStrip.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>524, 22</value>
+  </data>
+  <data name="statusStrip.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>8</value>
+  </data>
+  <data name="statusStrip.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Name" xml:space="preserve">
+    <value>statusStrip</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;statusStrip.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>68</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing.Primitives">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>524, 661</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAGABoAwAAFgAAACgAAAAQAAAAIAAAAAEAGAAAAAAAAAAAAGAAAABgAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//3w//3w//3w//3w//3w/
+        /3w//3w//3w//3w//3w//3w//3wAAAAAAAAAAAAAAAA//3w//3w//3w//3w//3w//3w//3w//3w//3w/
+        /3w//3w//3wAAAAAAAAAAAAAAAA//3w//3w//3w//3w//3w//3w//3w//3w//3w//3w//3w//3wAAAAA
+        AAAAAAAAAAA//3w//3w//3w//3w//3w//3w//3w//3w//3w//3w//3w//3wAAAAAAAAAAAAAAAA//3w/
+        /3w//3w//3w//3w//3w//3w//3w//3w//3w//3w//3wAAAAAAAAAAAAAAAA//3w//3w//3w//3w//3w/
+        /3w//3w//3w//3w//3w//3w//3wAAAAAAAAAAAAAAAA//3w//3w//3w//3w//3w//3wAAAA//3wAAAA/
+        /3wAAAA//3wAAAAAAAAAAAAAAAA//3w//3w//3w//3w//3w//3w//3wAAAAAAAAAAAA//3w//3wAAAAA
+        AAAAAAAAAAA//3w//3w//3w//3w//3w//3wAAAAAAAAAAAAAAAAAAAA//3wAAAAAAAAAAAAAAAA//3w/
+        /3w//3w//3w//3w//3w//3wAAAAAAAAAAAA//3w//3wAAAAAAAAAAAAAAAA//3w//3w//3w//3w//3w/
+        /3wAAAA//3wAAAA//3wAAAA//3wAAAAAAAAAAAAAAAA//3w//3w//3w//3w//3w//3w//3w//3w//3w/
+        /3w//3w//3wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>540, 700</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Screenshot Bot</value>
+  </data>
+  <data name="&gt;&gt;notifyIcon.Name" xml:space="preserve">
+    <value>notifyIcon</value>
+  </data>
+  <data name="&gt;&gt;notifyIcon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;miNotifyIconShow.Name" xml:space="preserve">
+    <value>miNotifyIconShow</value>
+  </data>
+  <data name="&gt;&gt;miNotifyIconShow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mitNotifyIconStartStop.Name" xml:space="preserve">
+    <value>mitNotifyIconStartStop</value>
+  </data>
+  <data name="&gt;&gt;mitNotifyIconStartStop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;miNotifyIconSeparator.Name" xml:space="preserve">
+    <value>miNotifyIconSeparator</value>
+  </data>
+  <data name="&gt;&gt;miNotifyIconSeparator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;miNotifyIconExit.Name" xml:space="preserve">
+    <value>miNotifyIconExit</value>
+  </data>
+  <data name="&gt;&gt;miNotifyIconExit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsFile.Name" xml:space="preserve">
+    <value>tsFile</value>
+  </data>
+  <data name="&gt;&gt;tsFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;miExit.Name" xml:space="preserve">
+    <value>miExit</value>
+  </data>
+  <data name="&gt;&gt;miExit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsEdit.Name" xml:space="preserve">
+    <value>tsEdit</value>
+  </data>
+  <data name="&gt;&gt;tsEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;miPreferences.Name" xml:space="preserve">
+    <value>miPreferences</value>
+  </data>
+  <data name="&gt;&gt;miPreferences.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsTools.Name" xml:space="preserve">
+    <value>tsTools</value>
+  </data>
+  <data name="&gt;&gt;tsTools.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;miCreateVideo.Name" xml:space="preserve">
+    <value>miCreateVideo</value>
+  </data>
+  <data name="&gt;&gt;miCreateVideo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsHelp.Name" xml:space="preserve">
+    <value>tsHelp</value>
+  </data>
+  <data name="&gt;&gt;tsHelp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;miAbout.Name" xml:space="preserve">
+    <value>miAbout</value>
+  </data>
+  <data name="&gt;&gt;miAbout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolTipStart.Name" xml:space="preserve">
+    <value>toolTipStart</value>
+  </data>
+  <data name="&gt;&gt;toolTipStart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timerUpdateCountdown.Name" xml:space="preserve">
+    <value>timerUpdateCountdown</value>
+  </data>
+  <data name="&gt;&gt;timerUpdateCountdown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsStatus.Name" xml:space="preserve">
+    <value>tsStatus</value>
+  </data>
+  <data name="&gt;&gt;tsStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormMain</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
