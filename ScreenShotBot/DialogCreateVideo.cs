@@ -806,12 +806,13 @@ namespace ScreenShotBot
         {
             Tools.TryApplyFormat(Settings.Default.OptionVideoOutputFilename, DateTime.Now, 1, out string outputFilename, out _);
 
+            string inputPath = Path.Combine(_currentVideoInputDir, "input.txt");
             string outputPath = Path.Combine(_currentVideoOutputDir, outputFilename);
 
-            return GetArguments(outputPath);
+            return GetArguments(inputPath, outputPath);
         }
 
-        private string GetArguments(string outputPath)
+        private string GetArguments(string concatInputPath, string outputPath)
         {
             string arguments = string.Empty;
 
@@ -819,7 +820,7 @@ namespace ScreenShotBot
             // Can't use static pattern like "Screenshot_%d5.png". Does not work for all cases.
             // Let's use an input file instead!
 
-            arguments += " -f concat -i input.txt";
+            arguments += $" -f concat -i \"{concatInputPath}\"";
 
             arguments += " -codec:v libx264 -pix_fmt yuv420p -b:v 2500k -minrate 1500k -maxrate 4000k -bufsize 5000k";
 
@@ -924,6 +925,7 @@ namespace ScreenShotBot
         {
             string concatInputPath = null;
             Process converterProcess = null;
+            bool success = false;
 
             try
             {
@@ -960,7 +962,7 @@ namespace ScreenShotBot
                         relativePath = inputPath.Substring(workingDirectory.Length).TrimStart(Path.DirectorySeparatorChar).Replace('\\', '/');
 
                         writer.WriteLine($"file '{relativePath}'");
-                        writer.WriteLine($"duration {fps:0.#####}");
+                        writer.WriteLine(FormattableString.Invariant($"duration {fps:0.#####}"));
 
                         if (_state == State.Stopping)
                         {
@@ -1027,7 +1029,7 @@ namespace ScreenShotBot
                 else
                 {
                     converterProcess = Process.Start(
-                        new ProcessStartInfo(Settings.Default.OptionVideoConverterPath.Trim(), GetArguments(outputPath))
+                        new ProcessStartInfo(Settings.Default.OptionVideoConverterPath.Trim(), GetArguments(concatInputPath, outputPath))
                         {
                             //UseShellExecute = true,
                             CreateNoWindow = true,
@@ -1074,6 +1076,7 @@ namespace ScreenShotBot
                 if (converterProcess.ExitCode == 0)
                 {
                     Stop(true, false, Resources.info_VideoConverterDone);
+                    success = true;
                 }
                 else
                 {
@@ -1097,7 +1100,7 @@ namespace ScreenShotBot
                         converterProcess.WaitForExit(250);
                     }
 
-                    if (concatInputPath != null && File.Exists(concatInputPath))
+                    if (success && concatInputPath != null && File.Exists(concatInputPath))
                     {
                         File.Delete(concatInputPath);
                     }
