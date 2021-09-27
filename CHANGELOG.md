@@ -4,6 +4,7 @@
 - BUGFIX: Display an error if ffmpeg reported an error.
 - BUGFIX: Creating a video could fail, because input.txt was not found. A full file path will now be specified for ffmpeg.
 - BUGFIX: Duration Input.txt could sometimes not be parsed depending on the OS culture.
-- DETAIL: Input.txt will not be deleted anymore if an error occurs during video creation.
-- DETAIL: Changed local appdata folder to "ScreenShotBot".
-- DETAIL: Settings are now saved in file "Settings.xml" within the local appdata folder.
+- CHANGE: Input.txt will not be deleted anymore if an error occurs during video creation.
+- CHANGE: Changed local appdata folder to "ScreenShotBot".
+- CHANGE: Settings are now saved in file "Settings.xml" within the local appdata folder.
+- ADD: Added "Minimize to tray" and "Close to tray" in the options menu.

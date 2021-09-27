@@ -58,5 +58,8 @@ namespace ScreenShotBot
         public VideoSubDirsType VideoSubDirsType { get; set; } = VideoSubDirsType.IncludeSubDirs;
 
         public string VideoOutputFilename { get; set; } = "Timelapse-{yy}-{MM}-{dd}.mp4";
+
+        public bool MinimizeToTray { get; set; }
+        public bool CloseToTray { get; set; }
     }
 }

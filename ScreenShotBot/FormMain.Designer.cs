@@ -56,8 +56,9 @@ namespace ScreenShotBot
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.tsFile = new System.Windows.Forms.ToolStripMenuItem();
             this.miExit = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsEdit = new System.Windows.Forms.ToolStripMenuItem();
-            this.miPreferences = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsSettings = new System.Windows.Forms.ToolStripMenuItem();
+            this.miMinimizeToTray = new System.Windows.Forms.ToolStripMenuItem();
+            this.miCloseToTray = new System.Windows.Forms.ToolStripMenuItem();
             this.tsTools = new System.Windows.Forms.ToolStripMenuItem();
             this.miCreateVideo = new System.Windows.Forms.ToolStripMenuItem();
             this.tsHelp = new System.Windows.Forms.ToolStripMenuItem();
@@ -245,7 +246,7 @@ namespace ScreenShotBot
             // 
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsFile,
-            this.tsEdit,
+            this.tsSettings,
             this.tsTools,
             this.tsHelp});
             resources.ApplyResources(this.menuStrip, "menuStrip");
@@ -262,18 +263,30 @@ namespace ScreenShotBot
             // 
             this.miExit.Name = "miExit";
             resources.ApplyResources(this.miExit, "miExit");
+            this.miExit.Click += new System.EventHandler(this.miExit_Click);
             // 
-            // tsEdit
+            // tsSettings
             // 
-            this.tsEdit.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.miPreferences});
-            this.tsEdit.Name = "tsEdit";
-            resources.ApplyResources(this.tsEdit, "tsEdit");
+            this.tsSettings.CheckOnClick = true;
+            this.tsSettings.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.miMinimizeToTray,
+            this.miCloseToTray});
+            this.tsSettings.Name = "tsSettings";
+            resources.ApplyResources(this.tsSettings, "tsSettings");
             // 
-            // miPreferences
+            // miMinimizeToTray
             // 
-            this.miPreferences.Name = "miPreferences";
-            resources.ApplyResources(this.miPreferences, "miPreferences");
+            this.miMinimizeToTray.CheckOnClick = true;
+            this.miMinimizeToTray.Name = "miMinimizeToTray";
+            resources.ApplyResources(this.miMinimizeToTray, "miMinimizeToTray");
+            this.miMinimizeToTray.CheckedChanged += new System.EventHandler(this.miMinimizeToTray_CheckedChanged);
+            // 
+            // miCloseToTray
+            // 
+            this.miCloseToTray.CheckOnClick = true;
+            this.miCloseToTray.Name = "miCloseToTray";
+            resources.ApplyResources(this.miCloseToTray, "miCloseToTray");
+            this.miCloseToTray.Click += new System.EventHandler(this.miCloseToTray_Click);
             // 
             // tsTools
             // 
@@ -286,6 +299,7 @@ namespace ScreenShotBot
             // 
             this.miCreateVideo.Name = "miCreateVideo";
             resources.ApplyResources(this.miCreateVideo, "miCreateVideo");
+            this.miCreateVideo.Click += new System.EventHandler(this.miCreateVideo_Click);
             // 
             // tsHelp
             // 
@@ -465,8 +479,8 @@ namespace ScreenShotBot
         private System.Windows.Forms.TextBox txtCountdown;
         private System.Windows.Forms.Timer timerUpdateCountdown;
         private System.Windows.Forms.ToolStripMenuItem tsFile;
-        private System.Windows.Forms.ToolStripMenuItem tsEdit;
-        private System.Windows.Forms.ToolStripMenuItem miPreferences;
+        private System.Windows.Forms.ToolStripMenuItem tsSettings;
+        private System.Windows.Forms.ToolStripMenuItem miMinimizeToTray;
         private System.Windows.Forms.ToolStripMenuItem tsHelp;
         private System.Windows.Forms.ToolStripMenuItem miAbout;
         private System.Windows.Forms.ToolStripMenuItem tsTools;
@@ -484,6 +498,7 @@ namespace ScreenShotBot
         private System.Windows.Forms.ToolStripMenuItem mitNotifyIconStartStop;
         private System.Windows.Forms.ToolStripSeparator miNotifyIconSeparator;
         private System.Windows.Forms.ToolStripMenuItem miNotifyIconExit;
+        private System.Windows.Forms.ToolStripMenuItem miCloseToTray;
     }
 }
 

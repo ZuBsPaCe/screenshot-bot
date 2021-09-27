@@ -1,6 +1,7 @@
 ﻿using ScreenShotBot.Properties;
 using System;
 using System.ComponentModel;
+using System.Configuration;
 using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -17,6 +18,7 @@ namespace ScreenShotBot
         private readonly ILog _log;
 
         private bool _loading = true;
+        private bool _forceExit;
 
         private State _state = State.Stopped;
         private string _stoppingError;
@@ -56,11 +58,8 @@ namespace ScreenShotBot
         {
             try
             {
-                tsFile.DropDownItemClicked += menuStrip_ItemClicked;
-                tsEdit.DropDownItemClicked += menuStrip_ItemClicked;
-                tsTools.DropDownItemClicked += menuStrip_ItemClicked;
-                tsHelp.DropDownItemClicked += menuStrip_ItemClicked;
-
+                miCloseToTray.Checked = Settings.Instance.CloseToTray;
+                miMinimizeToTray.Checked = Settings.Instance.MinimizeToTray;
 
                 txtScreenShotDirectory.Text = Settings.Instance.ScreenShotDir;
 
@@ -148,28 +147,37 @@ namespace ScreenShotBot
         {
             try
             {
-                if (_state != State.Stopped)
+                if (_forceExit || !Settings.Instance.CloseToTray)
                 {
-                    if (MessageBox.Show(
-                        this,
-                        Resources.info_ReallyAbortRunningProcess,
-                        Resources.caption_AbortRunningProcess,
-                        MessageBoxButtons.YesNo,
-                        MessageBoxIcon.Warning,
-                        MessageBoxDefaultButton.Button2) != DialogResult.Yes)
+                    if (_state != State.Stopped)
                     {
-                        e.Cancel = true;
-                        return;
+                        if (MessageBox.Show(
+                            this,
+                            Resources.info_ReallyAbortRunningProcess,
+                            Resources.caption_AbortRunningProcess,
+                            MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Warning,
+                            MessageBoxDefaultButton.Button2) != DialogResult.Yes)
+                        {
+                            _forceExit = false;
+                            e.Cancel = true;
+                            return;
+                        }
                     }
+
+                    _log.WriteDebug(Resources.debug_ApplicationFormClosingStarted);
+
+                    _exitThread = true;
+                    _screenShotResetEvent.Set();
+                    _screenShotThread.Join(4000);
+
+                    _log.WriteDebug(Resources.debug_ApplicationFormClosingDone);
                 }
-
-                _log.WriteDebug(Resources.debug_ApplicationFormClosingStarted);
-
-                _exitThread = true;
-                _screenShotResetEvent.Set();
-                _screenShotThread.Join(4000);
-
-                _log.WriteDebug(Resources.debug_ApplicationFormClosingDone);
+                else
+                {
+                    e.Cancel = true;
+                    HideWindow();
+                }
             }
             catch (Exception ex)
             {
@@ -217,6 +225,13 @@ namespace ScreenShotBot
                 {
                     _preferredWindowState = FormWindowState.Maximized;
                 }
+                else if (WindowState == FormWindowState.Minimized)
+                {
+                    if (Settings.Instance.MinimizeToTray)
+                    {
+                        HideWindow();
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -227,36 +242,29 @@ namespace ScreenShotBot
 
         #endregion Form Events
 
-        #region Control Events
+        #region Menu Events
 
-        private void menuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void miExit_Click(object sender, EventArgs e)
         {
             try
             {
-                if (e.ClickedItem == miExit)
-                {
-                    Close();
-                }
-                else if (e.ClickedItem == miPreferences)
-                {
+                ForceExit();
+            }
+            catch (Exception ex)
+            {
+                _log.WriteError(ex);
+                Debug.Fail(ex.ToString());
+            }
+        }
 
-                }
-                else if (e.ClickedItem == miCreateVideo)
+        private void miMinimizeToTray_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Settings.Instance.MinimizeToTray != miMinimizeToTray.Checked)
                 {
-                    try
-                    {
-                        notifyIcon.ContextMenuStrip.Enabled = false;
-                        DialogCreateVideo dlg = new DialogCreateVideo(_log);
-                        dlg.ShowDialog(this);
-                    }
-                    finally
-                    {
-                        notifyIcon.ContextMenuStrip.Enabled = true;
-                    }
-                }
-                else if (e.ClickedItem == miAbout)
-                {
-
+                    Settings.Instance.MinimizeToTray = miMinimizeToTray.Checked;
+                    Settings.Instance.Save(_log);
                 }
             }
             catch (Exception ex)
@@ -265,6 +273,63 @@ namespace ScreenShotBot
                 Debug.Fail(ex.ToString());
             }
         }
+
+        private void miCloseToTray_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Settings.Instance.CloseToTray != miCloseToTray.Checked)
+                {
+                    Settings.Instance.CloseToTray = miCloseToTray.Checked;
+                    Settings.Instance.Save(_log);
+                }
+            }
+            catch (Exception ex)
+            {
+                _log.WriteError(ex);
+                Debug.Fail(ex.ToString());
+            }
+        }
+
+        private void miCreateVideo_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                try
+                {
+                    notifyIcon.ContextMenuStrip.Enabled = false;
+                    DialogCreateVideo dlg = new DialogCreateVideo(_log);
+                    dlg.ShowDialog(this);
+                }
+                finally
+                {
+                    notifyIcon.ContextMenuStrip.Enabled = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                _log.WriteError(ex);
+                Debug.Fail(ex.ToString());
+            }
+        }
+
+        private void miAbout_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var dlg = new DialogAbout();
+                dlg.ShowDialog(this);
+            }
+            catch (Exception ex)
+            {
+                _log.WriteError(ex);
+                Debug.Fail(ex.ToString());
+            }
+        }
+
+        #endregion Menu Events
+
+        #region Control Events
 
         private void cbScreen_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -597,22 +662,8 @@ namespace ScreenShotBot
                 }
                 else if (e.ClickedItem == miNotifyIconExit)
                 {
-                    Close();
+                    ForceExit();
                 }
-            }
-            catch (Exception ex)
-            {
-                _log.WriteError(ex);
-                Debug.Fail(ex.ToString());
-            }
-        }
-
-        private void miAbout_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                var dlg = new DialogAbout();
-                dlg.ShowDialog(this);
             }
             catch (Exception ex)
             {
@@ -1172,9 +1223,24 @@ namespace ScreenShotBot
 
         private void ShowWindow()
         {
+            Show();
             Activate();
             WindowState = _preferredWindowState;
             BringToFront();
+        }
+
+        private void HideWindow()
+        {
+            if (Visible)
+            {
+                Hide();
+            }
+        }
+
+        private void ForceExit()
+        {
+            _forceExit = true;
+            BeginInvoke(new MethodInvoker(Close));
         }
 
         #endregion Private Methods
