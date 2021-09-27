@@ -163,7 +163,7 @@
   <data name="info_DateYear" xml:space="preserve">
     <value>Year</value>
   </data>
-  <data name="debug_ThreadStopping" xml:space="preserve">
+  <data name="trace_ThreadStopping" xml:space="preserve">
     <value>Thread is stopping.</value>
   </data>
   <data name="tooltip_InvalidVideoOutputPath" xml:space="preserve">
@@ -181,7 +181,7 @@
   <data name="info_DumpDirectory" xml:space="preserve">
     <value>Directory: [{0}]</value>
   </data>
-  <data name="debug_ThreadUpdatingPreview" xml:space="preserve">
+  <data name="trace_ThreadUpdatingPreview" xml:space="preserve">
     <value>Thread updates preview.</value>
   </data>
   <data name="info_StatusStopping" xml:space="preserve">
@@ -237,7 +237,7 @@ Overwrite?</value>
   <data name="IconGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>IconGreen.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="debug_ThreadNoScreen" xml:space="preserve">
+  <data name="trace_ThreadNoScreen" xml:space="preserve">
     <value>Thread has no screen selected.</value>
   </data>
   <data name="info_StopReasonAborted" xml:space="preserve">
@@ -258,7 +258,7 @@ Overwrite?</value>
   <data name="error_FailedToCreateProcess" xml:space="preserve">
     <value>Failed to create process...</value>
   </data>
-  <data name="debug_ThreadSleep" xml:space="preserve">
+  <data name="trace_ThreadSleep" xml:space="preserve">
     <value>Thread will sleep.</value>
   </data>
   <data name="tooltip_InvalidScale" xml:space="preserve">
@@ -270,13 +270,13 @@ Overwrite?</value>
   <data name="info_ScaleHeight" xml:space="preserve">
     <value>Scale to height (px)</value>
   </data>
-  <data name="debug_ThreadGettingScreenShot" xml:space="preserve">
+  <data name="trace_ThreadGettingScreenShot" xml:space="preserve">
     <value>Thread captures screenshot.</value>
   </data>
   <data name="tooltip_InvalidScreen" xml:space="preserve">
     <value>Invalid screen...</value>
   </data>
-  <data name="debug_ThreadWokeUp" xml:space="preserve">
+  <data name="trace_ThreadWokeUp" xml:space="preserve">
     <value>Thread woke up.</value>
   </data>
   <data name="info_DumpInterval" xml:space="preserve">
@@ -354,7 +354,34 @@ Overwrite?</value>
   <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="debug_XmlCreated" xml:space="preserve">
+    <value>Created [{0}].</value>
+  </data>
+  <data name="debug_XmlCreating" xml:space="preserve">
+    <value>Creating [{0}].</value>
+  </data>
+  <data name="debug_XmlLoaded" xml:space="preserve">
+    <value>Loaded [{0}].</value>
+  </data>
+  <data name="debug_XmlLoading" xml:space="preserve">
+    <value>Loading [{0}].</value>
+  </data>
+  <data name="debug_XmlSaved" xml:space="preserve">
+    <value>Saved [{0}].</value>
+  </data>
+  <data name="debug_XmlSaving" xml:space="preserve">
+    <value>Saving [{0}].</value>
+  </data>
   <data name="error_VideoConverterReturnsError" xml:space="preserve">
     <value>Video converter returned an error.</value>
+  </data>
+  <data name="error_XmlCreatingFailed" xml:space="preserve">
+    <value>Failed to create [{0}].</value>
+  </data>
+  <data name="error_XmlLoadingFailed" xml:space="preserve">
+    <value>Failed to load [{0}].</value>
+  </data>
+  <data name="error_XmlSavingFailed" xml:space="preserve">
+    <value>Failed to save [{0}].</value>
   </data>
 </root>

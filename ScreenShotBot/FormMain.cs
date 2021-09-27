@@ -61,7 +61,8 @@ namespace ScreenShotBot
                 tsTools.DropDownItemClicked += menuStrip_ItemClicked;
                 tsHelp.DropDownItemClicked += menuStrip_ItemClicked;
 
-                txtScreenShotDirectory.Text = Settings.Default.OptionScreenShotDir;
+
+                txtScreenShotDirectory.Text = Settings.Instance.ScreenShotDir;
 
                 int preferredScreenIndex = -1;
                 for (var i = 0; i < Screen.AllScreens.Length; i++)
@@ -81,9 +82,9 @@ namespace ScreenShotBot
                     cbScreen.Items.Add(new ScreenItem(displayName, screen));
                 }
 
-                if (Settings.Default.OptionScreenIndex >= 0 && Settings.Default.OptionScreenIndex < cbScreen.Items.Count)
+                if (Settings.Instance.ScreenIndex >= 0 && Settings.Instance.ScreenIndex < cbScreen.Items.Count)
                 {
-                    cbScreen.SelectedIndex = Settings.Default.OptionScreenIndex;
+                    cbScreen.SelectedIndex = Settings.Instance.ScreenIndex;
                 }
                 else if (preferredScreenIndex >= 0)
                 {
@@ -99,20 +100,20 @@ namespace ScreenShotBot
                 Tools.AddFormats(_tsSubdirectoryAddVariable.Items); 
                 _tsSubdirectoryAddVariable.ItemClicked += TsSubdirectoryAddVariableOnItemClicked;
 
-                txtScreenShotSubDir.Text = Settings.Default.OptionScreenShotSubDir;
+                txtScreenShotSubDir.Text = Settings.Instance.ScreenShotSubDir;
                 txtScreenShotSubDir.SelectionStart = txtScreenShotSubDir.Text.Length;
 
 
                 Tools.AddFormats(_tsFilenamesAddVariable.Items);
                 _tsFilenamesAddVariable.ItemClicked += TsFilenamesAddVariableOnItemClicked;
 
-                txtScreenShotFilename.Text = Settings.Default.OptionScreenShotFilename;
+                txtScreenShotFilename.Text = Settings.Instance.ScreenShotFilename;
                 txtScreenShotFilename.SelectionStart = txtScreenShotFilename.Text.Length;
 
 
-                if (Settings.Default.OptionScreenShotInterval >= 0)
+                if (Settings.Instance.ScreenShotInterval >= 0)
                 {
-                    txtScreenShotInterval.Text = Settings.Default.OptionScreenShotInterval.ToString("0.###");
+                    txtScreenShotInterval.Text = Settings.Instance.ScreenShotInterval.ToString("0.###");
                 }
                 else
                 {
@@ -124,15 +125,8 @@ namespace ScreenShotBot
                     cbScreenShotIntervalUnit.Items.Add(new IntervalItem(Tools.GetEnumString(Resources.ResourceManager, intervalUnit), intervalUnit));
                 }
 
-                if (Settings.Default.OptionScreenShotIntervalUnits >= 0 && Settings.Default.OptionScreenShotIntervalUnits < cbScreenShotIntervalUnit.Items.Count)
-                {
-                    cbScreenShotIntervalUnit.SelectedIndex = Settings.Default.OptionScreenShotIntervalUnits;
-                }
-                else
-                {
-                    cbScreenShotIntervalUnit.SelectedIndex = (int) IntervalUnit.Secs;
-                }
-
+                cbScreenShotIntervalUnit.SelectedIndex = (int) Settings.Instance.ScreenShotIntervalUnits;
+                 
                 timerUpdateCountdown.Start();
                 _changeNotifyIconStopwatch.Start();
 
@@ -311,9 +305,9 @@ namespace ScreenShotBot
             {
                 FolderBrowserDialog dlg = new();
 
-                if (Directory.Exists(Settings.Default.OptionScreenShotDir))
+                if (Directory.Exists(Settings.Instance.ScreenShotDir))
                 {
-                    dlg.SelectedPath = Settings.Default.OptionScreenShotDir;
+                    dlg.SelectedPath = Settings.Instance.ScreenShotDir;
                 }
                 else
                 {
@@ -683,7 +677,7 @@ namespace ScreenShotBot
 
                 if (Directory.Exists(txtScreenShotDirectory.Text))
                 {
-                    Settings.Default.OptionScreenShotDir = txtScreenShotDirectory.Text;
+                    Settings.Instance.ScreenShotDir = txtScreenShotDirectory.Text;
                     btnOpenScreenShotDirectory.Enabled = true;
                 }
                 else
@@ -696,7 +690,7 @@ namespace ScreenShotBot
                 ScreenItem screenItem = (ScreenItem) cbScreen.SelectedItem;
                 if (screenItem.Value != null)
                 {
-                    Settings.Default.OptionScreenIndex = cbScreen.SelectedIndex;
+                    Settings.Instance.ScreenIndex = cbScreen.SelectedIndex;
                 }
                 else
                 {
@@ -707,7 +701,7 @@ namespace ScreenShotBot
                 if (string.IsNullOrWhiteSpace(txtScreenShotSubDir.Text) ||
                     TryFormatScreenshotSubDir(txtScreenShotSubDir.Text, DateTime.Now, 1, out _, out _))
                 {
-                    Settings.Default.OptionScreenShotSubDir = txtScreenShotSubDir.Text;
+                    Settings.Instance.ScreenShotSubDir = txtScreenShotSubDir.Text;
                 }
                 else
                 {
@@ -717,11 +711,10 @@ namespace ScreenShotBot
 
 
                 if (!string.IsNullOrWhiteSpace(txtScreenShotFilename.Text) &&
-                    TryFormatScreenshotFilename(txtScreenShotFilename.Text, DateTime.Now, 1, out _, out _, out var extension))
+                    TryFormatScreenshotFilename(txtScreenShotFilename.Text, DateTime.Now, 1, out _, out _, out _))
                 {
                     string format = txtScreenShotFilename.Text.Trim();
-                    Settings.Default.OptionScreenShotFilename = format;
-                    Settings.Default.OptionScreenShotExtension = (int) extension;
+                    Settings.Instance.ScreenShotFilename = format;
                 }
                 else
                 {
@@ -730,13 +723,13 @@ namespace ScreenShotBot
                 }
 
 
-                Settings.Default.OptionScreenShotIntervalUnits = cbScreenShotIntervalUnit.SelectedIndex;
+                Settings.Instance.ScreenShotIntervalUnits = (IntervalUnit) cbScreenShotIntervalUnit.SelectedIndex;
 
                 if (!string.IsNullOrWhiteSpace(txtScreenShotInterval.Text) &&
                     float.TryParse(txtScreenShotInterval.Text, out float screenShotInterval) &&
                     TryGetIntervalMsecs(screenShotInterval, (IntervalUnit) cbScreenShotIntervalUnit.SelectedIndex, out _))
                 {
-                    Settings.Default.OptionScreenShotInterval = screenShotInterval;
+                    Settings.Instance.ScreenShotInterval = screenShotInterval;
                 }
                 else
                 {
@@ -745,7 +738,7 @@ namespace ScreenShotBot
                 }
 
 
-                Settings.Default.Save();
+                Settings.Instance.Save(_log);
 
                 if (startEnabled)
                 {
@@ -962,12 +955,12 @@ namespace ScreenShotBot
             {
                 try
                 {
-                    _log.WriteDebug(Resources.debug_ThreadSleep);
+                    _log.WriteTrace(Resources.trace_ThreadSleep);
 
                     int waitMsecs = 1000;
                     if (_state == State.Running)
                     {
-                        if (TryGetIntervalMsecs(Settings.Default.OptionScreenShotInterval, (IntervalUnit) Settings.Default.OptionScreenShotIntervalUnits, out waitMsecs))
+                        if (TryGetIntervalMsecs(Settings.Instance.ScreenShotInterval, Settings.Instance.ScreenShotIntervalUnits, out waitMsecs))
                         {
                             UpdateStatus(waitMsecs, lastFile, savedFiles, lastFileSizeBytes, totalFileSizeBytes);
                         }
@@ -981,11 +974,11 @@ namespace ScreenShotBot
 
                     _screenShotResetEvent.WaitOne(waitMsecs);
 
-                    _log.WriteDebug(Resources.debug_ThreadWokeUp);
+                    _log.WriteTrace(Resources.trace_ThreadWokeUp);
 
                     if (_exitThread)
                     {
-                        _log.WriteDebug(Resources.debug_ThreadStopping);
+                        _log.WriteTrace(Resources.trace_ThreadStopping);
                         return;
                     }
 
@@ -993,7 +986,7 @@ namespace ScreenShotBot
 
                     if (screen == null)
                     {
-                        _log.WriteDebug(Resources.debug_ThreadNoScreen);
+                        _log.WriteTrace(Resources.trace_ThreadNoScreen);
                         continue;
                     }
 
@@ -1003,7 +996,7 @@ namespace ScreenShotBot
                     {
                         _state = State.Running;
 
-                        if (Settings.Default.OptionResetStatusAfterStart)
+                        if (Settings.Instance.ResetStatusAfterStart)
                         {
                             lastFile = string.Empty;
                             savedFiles = 0;
@@ -1013,17 +1006,17 @@ namespace ScreenShotBot
 
                         _lastSaveSubDir = null;
 
-                        if (TryFormatScreenshotSubDir(Settings.Default.OptionScreenShotSubDir, dateTime, subDirCounter, out string subDir, out bool hasSubDirCounter))
+                        if (TryFormatScreenshotSubDir(Settings.Instance.ScreenShotSubDir, dateTime, subDirCounter, out string subDir, out bool hasSubDirCounter))
                         {
-                            currentDir = Path.Combine(Settings.Default.OptionScreenShotDir, subDir);
+                            currentDir = Path.Combine(Settings.Instance.ScreenShotDir, subDir);
 
                             if (hasSubDirCounter)
                             {
                                 while (Directory.Exists(currentDir))
                                 {
                                     subDirCounter += 1;
-                                    TryFormatScreenshotSubDir(Settings.Default.OptionScreenShotSubDir, dateTime, subDirCounter, out subDir, out _);
-                                    currentDir = Path.Combine(Settings.Default.OptionScreenShotDir, subDir);
+                                    TryFormatScreenshotSubDir(Settings.Instance.ScreenShotSubDir, dateTime, subDirCounter, out subDir, out _);
+                                    currentDir = Path.Combine(Settings.Instance.ScreenShotDir, subDir);
                                 }
                             }
 
@@ -1031,7 +1024,7 @@ namespace ScreenShotBot
                         }
                         else
                         {
-                            currentDir = Settings.Default.OptionScreenShotDir;
+                            currentDir = Settings.Instance.ScreenShotDir;
                         }
 
                         // If the directory did not change, we can continue from current screenShotCounter value.
@@ -1044,7 +1037,7 @@ namespace ScreenShotBot
 
                             if (Directory.Exists(currentDir))
                             {
-                                TryFormatScreenshotFilename(Settings.Default.OptionScreenShotFilename, dateTime, screenShotCounter, out string filename, out bool hasFileCounter, out _);
+                                TryFormatScreenshotFilename(Settings.Instance.ScreenShotFilename, dateTime, screenShotCounter, out string filename, out bool hasFileCounter, out _);
 
                                 if (hasFileCounter)
                                 {
@@ -1053,7 +1046,7 @@ namespace ScreenShotBot
                                     while (File.Exists(path))
                                     {
                                         screenShotCounter += 1;
-                                        TryFormatScreenshotFilename(Settings.Default.OptionScreenShotFilename, dateTime, screenShotCounter, out filename, out _, out _);
+                                        TryFormatScreenshotFilename(Settings.Instance.ScreenShotFilename, dateTime, screenShotCounter, out filename, out _, out _);
                                         path = Path.Combine(currentDir, filename);
                                     }
                                 }
@@ -1070,7 +1063,7 @@ namespace ScreenShotBot
                     Bitmap bitmap = new Bitmap(screen.Bounds.Width, screen.Bounds.Height, PixelFormat.Format24bppRgb);
                     using (Graphics captureGraphic = Graphics.FromImage(bitmap))
                     {
-                        _log.WriteDebug(Resources.debug_ThreadGettingScreenShot);
+                        _log.WriteTrace(Resources.trace_ThreadGettingScreenShot);
 
                         captureGraphic.CopyFromScreen(screen.Bounds.X, screen.Bounds.Y, 0, 0, bitmap.Size);
                     }
@@ -1079,7 +1072,7 @@ namespace ScreenShotBot
 
                     if (_state == State.Running)
                     {
-                        TryFormatScreenshotFilename(Settings.Default.OptionScreenShotFilename, dateTime, screenShotCounter, out string filename, out bool hasCounter, out _);
+                        TryFormatScreenshotFilename(Settings.Instance.ScreenShotFilename, dateTime, screenShotCounter, out string filename, out bool hasCounter, out _);
 
                         string path = Path.Combine(currentDir, filename);
 
@@ -1132,7 +1125,7 @@ namespace ScreenShotBot
                         }
                     }
 
-                    _log.WriteDebug(Resources.debug_ThreadUpdatingPreview);
+                    _log.WriteTrace(Resources.trace_ThreadUpdatingPreview);
 
                     UpdatePreview(bitmap);
                 }

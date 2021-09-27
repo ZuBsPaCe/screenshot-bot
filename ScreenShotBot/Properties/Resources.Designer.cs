@@ -106,56 +106,56 @@ namespace ScreenShotBot.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Thread captures screenshot..
+        ///   Looks up a localized string similar to Created [{0}]..
         /// </summary>
-        internal static string debug_ThreadGettingScreenShot {
+        internal static string debug_XmlCreated {
             get {
-                return ResourceManager.GetString("debug_ThreadGettingScreenShot", resourceCulture);
+                return ResourceManager.GetString("debug_XmlCreated", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Thread has no screen selected..
+        ///   Looks up a localized string similar to Creating [{0}]..
         /// </summary>
-        internal static string debug_ThreadNoScreen {
+        internal static string debug_XmlCreating {
             get {
-                return ResourceManager.GetString("debug_ThreadNoScreen", resourceCulture);
+                return ResourceManager.GetString("debug_XmlCreating", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Thread will sleep..
+        ///   Looks up a localized string similar to Loaded [{0}]..
         /// </summary>
-        internal static string debug_ThreadSleep {
+        internal static string debug_XmlLoaded {
             get {
-                return ResourceManager.GetString("debug_ThreadSleep", resourceCulture);
+                return ResourceManager.GetString("debug_XmlLoaded", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Thread is stopping..
+        ///   Looks up a localized string similar to Loading [{0}]..
         /// </summary>
-        internal static string debug_ThreadStopping {
+        internal static string debug_XmlLoading {
             get {
-                return ResourceManager.GetString("debug_ThreadStopping", resourceCulture);
+                return ResourceManager.GetString("debug_XmlLoading", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Thread updates preview..
+        ///   Looks up a localized string similar to Saved [{0}]..
         /// </summary>
-        internal static string debug_ThreadUpdatingPreview {
+        internal static string debug_XmlSaved {
             get {
-                return ResourceManager.GetString("debug_ThreadUpdatingPreview", resourceCulture);
+                return ResourceManager.GetString("debug_XmlSaved", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Thread woke up..
+        ///   Looks up a localized string similar to Saving [{0}]..
         /// </summary>
-        internal static string debug_ThreadWokeUp {
+        internal static string debug_XmlSaving {
             get {
-                return ResourceManager.GetString("debug_ThreadWokeUp", resourceCulture);
+                return ResourceManager.GetString("debug_XmlSaving", resourceCulture);
             }
         }
         
@@ -183,6 +183,33 @@ namespace ScreenShotBot.Properties {
         internal static string error_VideoConverterReturnsError {
             get {
                 return ResourceManager.GetString("error_VideoConverterReturnsError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed to create [{0}]..
+        /// </summary>
+        internal static string error_XmlCreatingFailed {
+            get {
+                return ResourceManager.GetString("error_XmlCreatingFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed to load [{0}]..
+        /// </summary>
+        internal static string error_XmlLoadingFailed {
+            get {
+                return ResourceManager.GetString("error_XmlLoadingFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed to save [{0}]..
+        /// </summary>
+        internal static string error_XmlSavingFailed {
+            get {
+                return ResourceManager.GetString("error_XmlSavingFailed", resourceCulture);
             }
         }
         
@@ -758,6 +785,60 @@ namespace ScreenShotBot.Properties {
         internal static string tooltip_VideoOutpuDirDoesNotExist {
             get {
                 return ResourceManager.GetString("tooltip_VideoOutpuDirDoesNotExist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Thread captures screenshot..
+        /// </summary>
+        internal static string trace_ThreadGettingScreenShot {
+            get {
+                return ResourceManager.GetString("trace_ThreadGettingScreenShot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Thread has no screen selected..
+        /// </summary>
+        internal static string trace_ThreadNoScreen {
+            get {
+                return ResourceManager.GetString("trace_ThreadNoScreen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Thread will sleep..
+        /// </summary>
+        internal static string trace_ThreadSleep {
+            get {
+                return ResourceManager.GetString("trace_ThreadSleep", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Thread is stopping..
+        /// </summary>
+        internal static string trace_ThreadStopping {
+            get {
+                return ResourceManager.GetString("trace_ThreadStopping", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Thread updates preview..
+        /// </summary>
+        internal static string trace_ThreadUpdatingPreview {
+            get {
+                return ResourceManager.GetString("trace_ThreadUpdatingPreview", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Thread woke up..
+        /// </summary>
+        internal static string trace_ThreadWokeUp {
+            get {
+                return ResourceManager.GetString("trace_ThreadWokeUp", resourceCulture);
             }
         }
         

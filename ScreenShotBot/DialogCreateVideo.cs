@@ -49,20 +49,20 @@ namespace ScreenShotBot
                 Tools.AddFormats(_tsOutputFilenameAddVariable.Items);
                 _tsOutputFilenameAddVariable.ItemClicked += TsOutputFilenameAddVariableOnItemClicked;
 
-                txtVideoConverterPath.Text = Settings.Default.OptionVideoConverterPath;
-                txtVideoFilePattern.Text = Settings.Default.OptionVideoFilePattern;
+                txtVideoConverterPath.Text = Settings.Instance.VideoConverterPath;
+                txtVideoFilePattern.Text = Settings.Instance.VideoFilePattern;
                 
                 cbVideoSubDirsType.Items.Add(new VideoSubDirsTypeItem(Resources.info_NoSubDirs, VideoSubDirsType.NoSubDirs));
                 cbVideoSubDirsType.Items.Add(new VideoSubDirsTypeItem(Resources.info_IncludeSubDirs, VideoSubDirsType.IncludeSubDirs));
                 cbVideoSubDirsType.Items.Add(new VideoSubDirsTypeItem(Resources.info_OnlySubDirs, VideoSubDirsType.OnlySubDirs));
-                cbVideoSubDirsType.SelectedIndex = Settings.Default.OptionVideoSubDirsType;
+                cbVideoSubDirsType.SelectedIndex = (int) Settings.Instance.VideoSubDirsType;
 
-                txtVideoImagesPerSecond.Text = Settings.Default.OptionVideoImagesPerSecond.ToString("0.#####");
+                txtVideoImagesPerSecond.Text = Settings.Instance.VideoImagesPerSecond.ToString("0.#####");
 
                 cbVideoScaleType.Items.Add(new VideoScaleTypeItem(Resources.info_ScaleOriginal, VideoScaleType.Original));
                 cbVideoScaleType.Items.Add(new VideoScaleTypeItem(Resources.info_ScaleHeight, VideoScaleType.Height));
 
-                if ((VideoScaleType) Settings.Default.OptionVideoScaleType == VideoScaleType.Original)
+                if ((VideoScaleType) Settings.Instance.VideoScaleType == VideoScaleType.Original)
                 {
                     cbVideoScaleType.SelectedIndex = 0;
                     txtVideoScale.Text = string.Empty;
@@ -70,16 +70,16 @@ namespace ScreenShotBot
                 else
                 {
                     cbVideoScaleType.SelectedIndex = 1;
-                    txtVideoScale.Text = Settings.Default.OptionVideoScale.ToString();
+                    txtVideoScale.Text = Settings.Instance.VideoScale.ToString();
                 }
 
-                txtVideoOutputDir.Text = Settings.Default.OptionVideoOutputDir;
-                txtVideoOutputFilename.Text = Settings.Default.OptionVideoOutputFilename;
+                txtVideoOutputDir.Text = Settings.Instance.VideoOutputDir;
+                txtVideoOutputFilename.Text = Settings.Instance.VideoOutputFilename;
                 
-                if (Settings.Default.OptionUseVideoConverterCustomCommand)
+                if (Settings.Instance.UseVideoConverterCustomCommand)
                 {
                     chkUseVideoConverterCustomCommand.Checked = true;
-                    txtVideoConverterCommand.Text = Settings.Default.OptionVideoConverterCustomCommand;
+                    txtVideoConverterCommand.Text = Settings.Instance.VideoConverterCustomCommand;
                 }
             }
             catch (Exception ex)
@@ -303,9 +303,9 @@ namespace ScreenShotBot
                 }
                 else
                 {
-                    if (txtVideoScale.Text != Settings.Default.OptionVideoScale.ToString())
+                    if (txtVideoScale.Text != Settings.Instance.VideoScale.ToString())
                     {
-                        txtVideoScale.Text = Settings.Default.OptionVideoScale.ToString();
+                        txtVideoScale.Text = Settings.Instance.VideoScale.ToString();
                     }
                     else
                     {
@@ -339,9 +339,9 @@ namespace ScreenShotBot
             {
                 FolderBrowserDialog dlg = new();
 
-                if (Directory.Exists(Settings.Default.OptionScreenShotDir))
+                if (Directory.Exists(Settings.Instance.ScreenShotDir))
                 {
-                    dlg.SelectedPath = Settings.Default.OptionScreenShotDir;
+                    dlg.SelectedPath = Settings.Instance.ScreenShotDir;
                 }
                 else
                 {
@@ -503,9 +503,9 @@ namespace ScreenShotBot
 
                 if (chkUseVideoConverterCustomCommand.Checked)
                 {
-                    if (!string.IsNullOrWhiteSpace(Settings.Default.OptionVideoConverterCustomCommand))
+                    if (!string.IsNullOrWhiteSpace(Settings.Instance.VideoConverterCustomCommand))
                     {
-                        txtVideoConverterCommand.Text = Settings.Default.OptionVideoConverterCustomCommand;
+                        txtVideoConverterCommand.Text = Settings.Instance.VideoConverterCustomCommand;
                     }
                     else
                     {
@@ -628,7 +628,7 @@ namespace ScreenShotBot
 
                 if (File.Exists(txtVideoConverterPath.Text))
                 {
-                    Settings.Default.OptionVideoConverterPath = txtVideoConverterPath.Text;
+                    Settings.Instance.VideoConverterPath = txtVideoConverterPath.Text;
                 }
                 else
                 {
@@ -636,12 +636,12 @@ namespace ScreenShotBot
                     _startTooltip = Resources.tooltip_VideoConverterPathNotFound;
                 }
 
-                Settings.Default.OptionVideoFilePattern = txtVideoFilePattern.Text;
-                Settings.Default.OptionVideoSubDirsType = cbVideoSubDirsType.SelectedIndex;
+                Settings.Instance.VideoFilePattern = txtVideoFilePattern.Text;
+                Settings.Instance.VideoSubDirsType = (VideoSubDirsType) cbVideoSubDirsType.SelectedIndex;
 
                 if (float.TryParse(txtVideoImagesPerSecond.Text, out float frameRate) && frameRate >= 0)
                 {
-                    Settings.Default.OptionVideoImagesPerSecond = frameRate;
+                    Settings.Instance.VideoImagesPerSecond = frameRate;
                 }
                 else
                 {
@@ -650,7 +650,7 @@ namespace ScreenShotBot
                 }
 
                 VideoScaleTypeItem scaleItem = (VideoScaleTypeItem) cbVideoScaleType.SelectedItem;
-                Settings.Default.OptionVideoScaleType = (int) scaleItem.Value;
+                Settings.Instance.VideoScaleType = (int) scaleItem.Value;
 
                 if (scaleItem.Value == VideoScaleType.Height)
                 {
@@ -658,7 +658,7 @@ namespace ScreenShotBot
 
                     if (int.TryParse(txtVideoScale.Text, out int scale) && scale > 0)
                     {
-                        Settings.Default.OptionVideoScale = scale;
+                        Settings.Instance.VideoScale = scale;
                     }
                     else
                     {
@@ -679,7 +679,7 @@ namespace ScreenShotBot
                 }
 
                 _currentVideoOutputDir = txtVideoOutputDir.Text;
-                Settings.Default.OptionVideoOutputDir = txtVideoOutputDir.Text;
+                Settings.Instance.VideoOutputDir = txtVideoOutputDir.Text;
 
                 if (string.IsNullOrWhiteSpace(_currentVideoOutputDir))
                 {
@@ -703,7 +703,7 @@ namespace ScreenShotBot
                 }
                 else
                 {
-                    Settings.Default.OptionVideoOutputFilename = txtVideoOutputFilename.Text;
+                    Settings.Instance.VideoOutputFilename = txtVideoOutputFilename.Text;
                 }
 
                 if (chkUseVideoConverterCustomCommand.Checked)
@@ -711,8 +711,8 @@ namespace ScreenShotBot
                     txtVideoConverterCommand.ReadOnly = false;
                     txtVideoConverterCommand.BackColor = Color.White;
 
-                    Settings.Default.OptionVideoConverterCustomCommand = txtVideoConverterCommand.Text;
-                    Settings.Default.OptionUseVideoConverterCustomCommand = true;
+                    Settings.Instance.VideoConverterCustomCommand = txtVideoConverterCommand.Text;
+                    Settings.Instance.UseVideoConverterCustomCommand = true;
                 }
                 else
                 {
@@ -722,10 +722,10 @@ namespace ScreenShotBot
                     string converterPath = txtVideoConverterPath.Text.Trim();
                     txtVideoConverterCommand.Text = $"\"{converterPath}\" {GetArguments()}";
 
-                    Settings.Default.OptionUseVideoConverterCustomCommand = false;
+                    Settings.Instance.UseVideoConverterCustomCommand = false;
                 }
 
-                Settings.Default.Save();
+                Settings.Instance.Save(_log);
 
                 if (TryGetInputFilesInfo(txtVideoInputDir.Text, txtVideoFilePattern.Text, (VideoSubDirsType) cbVideoSubDirsType.SelectedIndex, out int inputFileCount, out string firstInputFilePath, out int width, out int height))
                 {
@@ -804,7 +804,7 @@ namespace ScreenShotBot
 
         private string GetArguments()
         {
-            Tools.TryApplyFormat(Settings.Default.OptionVideoOutputFilename, DateTime.Now, 1, out string outputFilename, out _);
+            Tools.TryApplyFormat(Settings.Instance.VideoOutputFilename, DateTime.Now, 1, out string outputFilename, out _);
 
             string inputPath = Path.Combine(_currentVideoInputDir, "input.txt");
             string outputPath = Path.Combine(_currentVideoOutputDir, outputFilename);
@@ -824,11 +824,11 @@ namespace ScreenShotBot
 
             arguments += " -codec:v libx264 -pix_fmt yuv420p -b:v 2500k -minrate 1500k -maxrate 4000k -bufsize 5000k";
 
-            if ((VideoScaleType) Settings.Default.OptionVideoScaleType == VideoScaleType.Height)
+            if ((VideoScaleType) Settings.Instance.VideoScaleType == VideoScaleType.Height)
             {
-                if (Settings.Default.OptionVideoScale > 0)
+                if (Settings.Instance.VideoScale > 0)
                 {
-                    arguments += $" -vf scale=-1:{Settings.Default.OptionVideoScale}";
+                    arguments += $" -vf scale=-1:{Settings.Instance.VideoScale}";
                 }
             }
 
@@ -938,7 +938,7 @@ namespace ScreenShotBot
 
                 string workingDirectory = Path.GetFullPath(_currentVideoInputDir.Trim());
 
-                List<string> inputFilePaths = GetInputFilePaths(_currentVideoInputDir, Settings.Default.OptionVideoFilePattern, (VideoSubDirsType) Settings.Default.OptionVideoSubDirsType);
+                List<string> inputFilePaths = GetInputFilePaths(_currentVideoInputDir, Settings.Instance.VideoFilePattern, Settings.Instance.VideoSubDirsType);
 
                 if (inputFilePaths.Count == 0)
                 {
@@ -952,7 +952,7 @@ namespace ScreenShotBot
                 }
 
                 concatInputPath = Path.Combine(_currentVideoInputDir, "input.txt");
-                float fps = 1f / Settings.Default.OptionVideoImagesPerSecond;
+                float fps = 1f / Settings.Instance.VideoImagesPerSecond;
 
                 using (StreamWriter writer = new StreamWriter(File.Open(concatInputPath, FileMode.Create)))
                 {
@@ -979,7 +979,7 @@ namespace ScreenShotBot
 
 
                 int fileCounter = 1;
-                Tools.TryApplyFormat(Settings.Default.OptionVideoOutputFilename, now, fileCounter, out string outputFilename, out bool hasCounter);
+                Tools.TryApplyFormat(Settings.Instance.VideoOutputFilename, now, fileCounter, out string outputFilename, out bool hasCounter);
 
                 string outputPath = Path.Combine(_currentVideoOutputDir, outputFilename);
                 if (File.Exists(outputPath))
@@ -989,7 +989,7 @@ namespace ScreenShotBot
                         while(true)
                         {
                             fileCounter += 1;
-                            if (!Tools.TryApplyFormat(Settings.Default.OptionVideoOutputFilename, now, fileCounter, out outputFilename, out _))
+                            if (!Tools.TryApplyFormat(Settings.Instance.VideoOutputFilename, now, fileCounter, out outputFilename, out _))
                             {
                                 break;
                             }
@@ -1014,10 +1014,10 @@ namespace ScreenShotBot
                     File.Delete(outputPath);
                 }
 
-                if (Settings.Default.OptionUseVideoConverterCustomCommand)
+                if (Settings.Instance.UseVideoConverterCustomCommand)
                 {
                     converterProcess = Process.Start(
-                        new ProcessStartInfo(Settings.Default.OptionVideoConverterCustomCommand)
+                        new ProcessStartInfo(Settings.Instance.VideoConverterCustomCommand)
                         {
                             //UseShellExecute = true,
                             CreateNoWindow = true,
@@ -1029,7 +1029,7 @@ namespace ScreenShotBot
                 else
                 {
                     converterProcess = Process.Start(
-                        new ProcessStartInfo(Settings.Default.OptionVideoConverterPath.Trim(), GetArguments(concatInputPath, outputPath))
+                        new ProcessStartInfo(Settings.Instance.VideoConverterPath.Trim(), GetArguments(concatInputPath, outputPath))
                         {
                             //UseShellExecute = true,
                             CreateNoWindow = true,
@@ -1044,7 +1044,7 @@ namespace ScreenShotBot
                     throw new Exception(Resources.error_FailedToCreateProcess);
                 }
 
-                float totalDurationSecs = (float) inputFilePaths.Count / Settings.Default.OptionVideoImagesPerSecond;
+                float totalDurationSecs = (float) inputFilePaths.Count / Settings.Instance.VideoImagesPerSecond;
 
                 while (!converterProcess.StandardError.EndOfStream)
                 {

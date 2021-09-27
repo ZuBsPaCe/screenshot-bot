@@ -31,13 +31,16 @@ namespace ScreenShotBot
                 string appDataDir =
                     Path.Combine(
                         Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                        "Screenshot Bot");
+                        "ScreenShotBot");
 
                 Directory.CreateDirectory(appDataDir);
 
-                using (ILog log = new LogFile(Path.Combine(appDataDir, "ScreenShotBot.log"), (LogLevel) Settings.Default.OptionLogLevel))
+                using (ILog log = new LogFile(Path.Combine(appDataDir, "ScreenShotBot.log"), false))
                 {
                     log.WriteInfo(Resources.info_ApplicationStarted.Swap(Application.ProductVersion));
+
+                    Settings.Load(log, Path.Combine(appDataDir, "Settings.xml"));
+                    log.Tracing = Settings.Instance.LogTracing;
 
                     Application.SetHighDpiMode(HighDpiMode.SystemAware);
                     Application.EnableVisualStyles();

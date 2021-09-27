@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Diagnostics;
+using System.IO;
 using System.Resources;
+using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using System.Xml;
+using System.Xml.Serialization;
 using ScreenShotBot.Properties;
 
 namespace ScreenShotBot
@@ -128,5 +132,80 @@ namespace ScreenShotBot
         }
 
         #endregion Strings
+
+        #region XML
+
+        public static bool Serialize<T>(ILog log, T config, string path)
+        {
+            log.WriteDebug(Resources.debug_XmlSaving.Swap(path));
+
+            try
+            {
+                using (FileStream stream = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.None, 4048, FileOptions.WriteThrough))
+                {
+                    XmlTextWriter writer = new XmlTextWriter(stream, Encoding.UTF8);
+                    writer.Formatting = Formatting.Indented;
+
+                    XmlSerializer serializer = new XmlSerializer(typeof(T));
+                    serializer.Serialize(writer, config);
+                }
+
+                log.WriteDebug(Resources.debug_XmlSaved.Swap(path));
+                return true;
+            }
+            catch (Exception ex)
+            {
+                log.WriteError(Resources.error_XmlSavingFailed.Swap(path), ex);
+                return false;
+            }
+        }
+
+        public static T Deserialize<T>(ILog log, string path) where T : new()
+        {
+            T config;
+
+            if (!File.Exists(path))
+            {
+                log.WriteDebug(Resources.debug_XmlCreating.Swap(path));
+
+                config = new T();
+
+                if (Serialize(log, config, path))
+                {
+                    log.WriteDebug(Resources.debug_XmlCreated.Swap(path));
+                }
+                else
+                {
+                    log.WriteError(Resources.error_XmlCreatingFailed.Swap(path));
+                }
+            }
+            else
+            {
+                log.WriteDebug(Resources.debug_XmlLoading.Swap(path));
+
+                try
+                {
+                    using (FileStream stream = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.None))
+                    {
+                        XmlTextReader reader = new XmlTextReader(stream);
+
+                        XmlSerializer serializer = new XmlSerializer(typeof(T));
+                        config = (T) serializer.Deserialize(reader);
+                    }
+
+                    log.WriteDebug(Resources.debug_XmlLoaded.Swap(path));
+                }
+                catch (Exception ex)
+                {
+                    log.WriteError(Resources.error_XmlLoadingFailed.Swap(path), ex);
+
+                    config = new T();
+                }
+            }
+
+            return config;
+        }
+
+        #endregion XML
     }
 }
