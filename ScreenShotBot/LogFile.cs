@@ -13,7 +13,7 @@ namespace ScreenShotBot
         {
             _logLevel = logLevel;
 
-            _stream = new StreamWriter(new FileStream(path, FileMode.Open, FileAccess.Write, FileShare.Read));
+            _stream = new StreamWriter(new FileStream(path, FileMode.OpenOrCreate, FileAccess.Write, FileShare.Read));
             _stream.BaseStream.SetLength(0);
             _stream.AutoFlush = true;
         }
