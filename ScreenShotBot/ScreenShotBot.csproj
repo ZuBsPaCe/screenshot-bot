@@ -32,6 +32,7 @@
 
   <ItemGroup>
     <None Include="..\CHANGELOG.md" Link="CHANGELOG.md" />
+    <None Include="..\README.md" Link="README.md" />
     <None Include="LICENSE.txt">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
