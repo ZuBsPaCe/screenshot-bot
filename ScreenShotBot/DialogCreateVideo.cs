@@ -1071,7 +1071,14 @@ namespace ScreenShotBot
                     }
                 }
 
-                Stop(true, false, Resources.info_VideoConverterDone);
+                if (converterProcess.ExitCode == 0)
+                {
+                    Stop(true, false, Resources.info_VideoConverterDone);
+                }
+                else
+                {
+                    Stop(true, true, Resources.error_VideoConverterReturnsError);
+                }
             }
             catch (Exception ex)
             {
