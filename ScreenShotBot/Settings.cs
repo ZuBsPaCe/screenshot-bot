@@ -25,7 +25,7 @@ namespace ScreenShotBot
 
         public string ScreenShotDir { get; set; }
 
-        public int ScreenIndex { get; set; } = -1;
+        public string ScreenDeviceName { get; set; }
 
         public float ScreenShotInterval { get; set; } = -1;
 

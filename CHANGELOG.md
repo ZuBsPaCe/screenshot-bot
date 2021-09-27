@@ -7,4 +7,5 @@
 - CHANGE: Input.txt will not be deleted anymore if an error occurs during video creation.
 - CHANGE: Changed local appdata folder to "ScreenShotBot".
 - CHANGE: Settings are now saved in file "Settings.xml" within the local appdata folder.
+- CHANGE: ScreenShotBot will now detect screen resolution changes. Screenshots will be created with the current resolution.
 - ADD: Added "Minimize to tray" and "Close to tray" in the options menu.

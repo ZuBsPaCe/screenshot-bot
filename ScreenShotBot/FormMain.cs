@@ -1,13 +1,13 @@
 ﻿using ScreenShotBot.Properties;
 using System;
 using System.ComponentModel;
-using System.Configuration;
 using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Threading;
 using System.Windows.Forms;
+using Microsoft.Win32;
 using IntervalItem = ScreenShotBot.ComboItem<ScreenShotBot.IntervalUnit>;
 using ScreenItem = ScreenShotBot.ComboItem<System.Windows.Forms.Screen>;
 
@@ -36,6 +36,7 @@ namespace ScreenShotBot
         private bool _exitThread;
 
         private Screen _selectedScreen;
+        private bool _updateScreen;
 
         private readonly ToolStripDropDownMenu _tsSubdirectoryAddVariable = new();
         private readonly ToolStripDropDownMenu _tsFilenamesAddVariable = new();
@@ -63,38 +64,9 @@ namespace ScreenShotBot
 
                 txtScreenShotDirectory.Text = Settings.Instance.ScreenShotDir;
 
-                int preferredScreenIndex = -1;
-                for (var i = 0; i < Screen.AllScreens.Length; i++)
-                {
-                    Screen screen = Screen.AllScreens[i];
-                    string displayName;
-                    if (screen.Primary)
-                    {
-                        displayName = Resources.info_ScreenPrimary.Swap(i);
-                        preferredScreenIndex = i;
-                    }
-                    else
-                    {
-                        displayName = Resources.info_Screen.Swap(i);
-                    }
+                UpdateScreens();
 
-                    cbScreen.Items.Add(new ScreenItem(displayName, screen));
-                }
-
-                if (Settings.Instance.ScreenIndex >= 0 && Settings.Instance.ScreenIndex < cbScreen.Items.Count)
-                {
-                    cbScreen.SelectedIndex = Settings.Instance.ScreenIndex;
-                }
-                else if (preferredScreenIndex >= 0)
-                {
-                    cbScreen.SelectedIndex = preferredScreenIndex;
-                }
-                else
-                {
-                    cbScreen.Items.Add(new ScreenItem(Resources.info_NoScreensDetected, null));
-                    cbScreen.SelectedIndex = 0;
-                }
-
+                SystemEvents.DisplaySettingsChanged += SystemEvents_DisplaySettingsChanged;   
 
                 Tools.AddFormats(_tsSubdirectoryAddVariable.Items); 
                 _tsSubdirectoryAddVariable.ItemClicked += TsSubdirectoryAddVariableOnItemClicked;
@@ -232,6 +204,19 @@ namespace ScreenShotBot
                         HideWindow();
                     }
                 }
+            }
+            catch (Exception ex)
+            {
+                _log.WriteError(ex);
+                Debug.Fail(ex.ToString());
+            }
+        }
+
+        private void SystemEvents_DisplaySettingsChanged(object? sender, EventArgs e)
+        {
+            try
+            {
+                _updateScreen = true;
             }
             catch (Exception ex)
             {
@@ -741,7 +726,7 @@ namespace ScreenShotBot
                 ScreenItem screenItem = (ScreenItem) cbScreen.SelectedItem;
                 if (screenItem.Value != null)
                 {
-                    Settings.Instance.ScreenIndex = cbScreen.SelectedIndex;
+                    Settings.Instance.ScreenDeviceName = screenItem.Value.DeviceName;
                 }
                 else
                 {
@@ -1033,6 +1018,11 @@ namespace ScreenShotBot
                         return;
                     }
 
+                    if (_selectedScreen == null || _updateScreen)
+                    {
+                        UpdateScreens();
+                    }
+
                     Screen screen = _selectedScreen;
 
                     if (screen == null)
@@ -1186,6 +1176,7 @@ namespace ScreenShotBot
                     if (!screenLocked)
                     {
                         screenLocked = true;
+                        _updateScreen = true;
                         _log.WriteWarning(Resources.warn_ScreenCannotBeCapturedNow.Swap(ex.Message));
                     }
                 }
@@ -1241,6 +1232,80 @@ namespace ScreenShotBot
         {
             _forceExit = true;
             BeginInvoke(new MethodInvoker(Close));
+        }
+
+        private void UpdateScreens()
+        {
+            if (InvokeRequired)
+            {
+                Invoke(new MethodInvoker(UpdateScreens));
+                return;
+            }
+
+            try
+            {
+                cbScreen.SelectedIndexChanged -= cbScreen_SelectedIndexChanged;
+
+                string selectedDeviceName;
+
+                if (_selectedScreen != null)
+                {
+                    selectedDeviceName = _selectedScreen.DeviceName;
+                }
+                else
+                {
+                    selectedDeviceName = Settings.Instance.ScreenDeviceName;
+                }
+
+                cbScreen.Items.Clear();
+
+                int preferredScreenIndex = -1;
+                for (var i = 0; i < Screen.AllScreens.Length; i++)
+                {
+                    Screen screen = Screen.AllScreens[i];
+                    string displayName;
+                    if (screen.Primary)
+                    {
+                        displayName = Resources.info_ScreenPrimary.Swap(i);
+                    }
+                    else
+                    {
+                        displayName = Resources.info_Screen.Swap(i);
+                    }
+
+                    cbScreen.Items.Add(new ScreenItem(displayName, screen));
+
+                    if (screen.DeviceName.Equals(selectedDeviceName, StringComparison.InvariantCultureIgnoreCase))
+                    {
+                        preferredScreenIndex = i;
+                    }
+                    else if (screen.Primary)
+                    {
+                        preferredScreenIndex = i;
+                    }
+                }
+
+                if (preferredScreenIndex >= 0)
+                {
+                    cbScreen.SelectedIndex = preferredScreenIndex;
+                }
+                else if (cbScreen.Items.Count > 0)
+                {
+                    cbScreen.SelectedIndex = 0;
+                }
+                else
+                {
+                    cbScreen.Items.Add(new ScreenItem(Resources.info_NoScreensDetected, null));
+                    cbScreen.SelectedIndex = 0;
+                }
+
+                _selectedScreen = ((ScreenItem) cbScreen.SelectedItem).Value;
+            }
+            finally
+            {
+                cbScreen.SelectedIndexChanged += cbScreen_SelectedIndexChanged;
+                _updateScreen = false;
+            }
         }
 
         #endregion Private Methods
