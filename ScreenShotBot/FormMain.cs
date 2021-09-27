@@ -1085,7 +1085,34 @@ namespace ScreenShotBot
 
                         if (!File.Exists(path))
                         {
-                            bitmap.Save(path, ImageFormat.Png);
+                            ImageFormat imageFormat = ImageFormat.Png;
+
+                            string extension = Path.GetExtension(path);
+                            if (!string.IsNullOrEmpty(extension))
+                            {
+                                switch (extension.ToLower())
+                                {
+                                    case @".bmp":
+                                        imageFormat = ImageFormat.Bmp;
+                                        break;
+
+                                    case @".jpg":
+                                    case @".jpeg":
+                                        imageFormat = ImageFormat.Jpeg;
+                                        break;
+
+                                    case @".png":
+                                        imageFormat = ImageFormat.Png;
+                                        break;
+
+                                    case @".tif":
+                                    case @".tiff":
+                                        imageFormat = ImageFormat.Tiff;
+                                        break;
+                                }
+                            }
+
+                            bitmap.Save(path, imageFormat);
 
                             savedFiles += 1;
 
